@@ -19,11 +19,7 @@ set_input_delay -clock clk -min 0.2 [get_ports {A_i[*] B_i[*] C_i[*] D_i[*] E_i[
 set_input_delay -clock clk -max 1.4 [get_ports {w*_sha256[*]}]
 set_input_delay -clock clk -min 0.2 [get_ports {w*_sha256[*]}]
 
-# Memory interface constraints (for RISC-V top module)
-set_input_delay -clock clk -max 1.4 [get_ports {DMAD_addr_in[*] DMAD_data_in[*] DMAD_wea_in[*]}]
-set_input_delay -clock clk -min 0.2 [get_ports {DMAD_addr_in[*] DMAD_data_in[*] DMAD_wea_in[*]}]
-set_input_delay -clock clk -max 1.4 [get_ports {DMAI_addr_in[*] DMAI_data_in[*] DMAI_wea_in[*]}]
-set_input_delay -clock clk -min 0.2 [get_ports {DMAI_addr_in[*] DMAI_data_in[*] DMAI_wea_in[*]}]
+# No memory interface constraints needed for SHA256_Top module
 
 # Output delay constraints (assuming 50% of clock period for hold)
 set_output_delay -clock clk -max 1.4 [get_ports {sha256_result[*]}]
