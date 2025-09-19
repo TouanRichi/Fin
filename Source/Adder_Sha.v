@@ -1,0 +1,12 @@
+module Adder_Sha (
+    input  wire [31:0] in1,  // Đầu vào thứ nhất
+    input  wire [31:0] in2,  // Đầu vào thứ hai
+    input  wire [31:0] in3,  // Đầu vào thứ ba
+    input  wire [31:0] in4,  // Đầu vào thứ tư
+    output wire [31:0] sum   // Kết quả đầu ra
+);
+
+    // Thực hiện phép cộng modulo 2^32
+    assign sum = in1 + in2 + in3 + in4;
+
+endmodule

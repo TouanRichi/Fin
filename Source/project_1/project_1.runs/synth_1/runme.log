@@ -1,0 +1,992 @@
+
+*** Running vivado
+    with args -log RISC_Sha_tb.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source RISC_Sha_tb.tcl
+
+
+
+****** Vivado v2020.1 (64-bit)
+  **** SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+  **** IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+source RISC_Sha_tb.tcl -notrace
+Command: synth_design -top RISC_Sha_tb -part xczu9eg-ffvc900-3-e -directive PerformanceOptimized -keep_equivalent_registers -no_lc -shreg_min_size 5 -retiming -no_iobuf
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xczu9eg'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xczu9eg'
+INFO: [Device 21-403] Loading part xczu9eg-ffvc900-3-e
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 20652
+WARNING: [Synth 8-992] reg_A_o_w is already implicitly declared earlier [C:/Users/Dat Pham/Downloads/Source/Top_Sha.v:420]
+WARNING: [Synth 8-992] reg_B_o_w is already implicitly declared earlier [C:/Users/Dat Pham/Downloads/Source/Top_Sha.v:429]
+WARNING: [Synth 8-992] reg_C_o_w is already implicitly declared earlier [C:/Users/Dat Pham/Downloads/Source/Top_Sha.v:438]
+WARNING: [Synth 8-992] reg_E_o_w is already implicitly declared earlier [C:/Users/Dat Pham/Downloads/Source/Top_Sha.v:456]
+WARNING: [Synth 8-992] reg_F_o_w is already implicitly declared earlier [C:/Users/Dat Pham/Downloads/Source/Top_Sha.v:465]
+WARNING: [Synth 8-992] reg_G_o_w is already implicitly declared earlier [C:/Users/Dat Pham/Downloads/Source/Top_Sha.v:474]
+WARNING: [Synth 8-992] reg_H_o_w is already implicitly declared earlier [C:/Users/Dat Pham/Downloads/Source/Top_Sha.v:483]
+WARNING: [Synth 8-992] data_o_adder3_w is already implicitly declared earlier [C:/Users/Dat Pham/Downloads/Source/Top_Sha.v:515]
+WARNING: [Synth 8-992] data_o_adder4_w is already implicitly declared earlier [C:/Users/Dat Pham/Downloads/Source/Top_Sha.v:539]
+WARNING: [Synth 8-992] data_o_reg32_w is already implicitly declared earlier [C:/Users/Dat Pham/Downloads/Source/Top_Sha.v:585]
+WARNING: [Synth 8-992] reg_A_o_w2 is already implicitly declared earlier [C:/Users/Dat Pham/Downloads/Source/Top_Sha.v:829]
+WARNING: [Synth 8-992] reg_B_o_w2 is already implicitly declared earlier [C:/Users/Dat Pham/Downloads/Source/Top_Sha.v:838]
+WARNING: [Synth 8-992] reg_C_o_w2 is already implicitly declared earlier [C:/Users/Dat Pham/Downloads/Source/Top_Sha.v:847]
+WARNING: [Synth 8-992] reg_E_o_w2 is already implicitly declared earlier [C:/Users/Dat Pham/Downloads/Source/Top_Sha.v:865]
+WARNING: [Synth 8-992] reg_F_o_w2 is already implicitly declared earlier [C:/Users/Dat Pham/Downloads/Source/Top_Sha.v:874]
+WARNING: [Synth 8-992] reg_G_o_w2 is already implicitly declared earlier [C:/Users/Dat Pham/Downloads/Source/Top_Sha.v:883]
+WARNING: [Synth 8-992] reg_H_o_w2 is already implicitly declared earlier [C:/Users/Dat Pham/Downloads/Source/Top_Sha.v:892]
+WARNING: [Synth 8-992] data_o_adder3_w2 is already implicitly declared earlier [C:/Users/Dat Pham/Downloads/Source/Top_Sha.v:919]
+WARNING: [Synth 8-992] data_o_adder4_w2 is already implicitly declared earlier [C:/Users/Dat Pham/Downloads/Source/Top_Sha.v:938]
+WARNING: [Synth 8-992] data_o_reg32_w2 is already implicitly declared earlier [C:/Users/Dat Pham/Downloads/Source/Top_Sha.v:949]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1581.273 ; gain = 82.703
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'RISC_Sha_tb' [C:/Users/Dat Pham/Downloads/Source/tb_FSM.v:3]
+WARNING: [Synth 8-6896] loop limit (65536) exceeded inside initial block, initial block items will be ignored [C:/Users/Dat Pham/Downloads/Source/tb_FSM.v:122]
+INFO: [Synth 8-251] ======================================== [C:/Users/Dat Pham/Downloads/Source/tb_FSM.v:137]
+INFO: [Synth 8-251] Starting Test Case 0 [C:/Users/Dat Pham/Downloads/Source/tb_FSM.v:138]
+INFO: [Synth 8-251] ======================================== [C:/Users/Dat Pham/Downloads/Source/tb_FSM.v:139]
+INFO: [Synth 8-251] SHA256 Input Values: [C:/Users/Dat Pham/Downloads/Source/tb_FSM.v:151]
+INFO: [Synth 8-251] A=6a09e667, B=bb67ae85, C=3c6ef372, D=a54ff53a [C:/Users/Dat Pham/Downloads/Source/tb_FSM.v:152]
+INFO: [Synth 8-251] E=510e527f, F=9b05688c, G=1f83d9ab, H=5be0cd19 [C:/Users/Dat Pham/Downloads/Source/tb_FSM.v:153]
+WARNING: [Synth 8-6896] if statement with non-constant condition is inside initial block, initial block items will be ignored [C:/Users/Dat Pham/Downloads/Source/tb_FSM.v:167]
+WARNING: [Synth 8-6896] if statement with non-constant condition is inside initial block, initial block items will be ignored [C:/Users/Dat Pham/Downloads/Source/tb_FSM.v:167]
+WARNING: [Synth 8-6896] if statement with non-constant condition is inside initial block, initial block items will be ignored [C:/Users/Dat Pham/Downloads/Source/tb_FSM.v:167]
+WARNING: [Synth 8-6896] if statement with non-constant condition is inside initial block, initial block items will be ignored [C:/Users/Dat Pham/Downloads/Source/tb_FSM.v:167]
+WARNING: [Synth 8-6896] if statement with non-constant condition is inside initial block, initial block items will be ignored [C:/Users/Dat Pham/Downloads/Source/tb_FSM.v:167]
+WARNING: [Synth 8-6896] if statement with non-constant condition is inside initial block, initial block items will be ignored [C:/Users/Dat Pham/Downloads/Source/tb_FSM.v:167]
+WARNING: [Synth 8-6896] if statement with non-constant condition is inside initial block, initial block items will be ignored [C:/Users/Dat Pham/Downloads/Source/tb_FSM.v:167]
+WARNING: [Synth 8-6896] if statement with non-constant condition is inside initial block, initial block items will be ignored [C:/Users/Dat Pham/Downloads/Source/tb_FSM.v:167]
+WARNING: [Synth 8-6896] if statement with non-constant condition is inside initial block, initial block items will be ignored [C:/Users/Dat Pham/Downloads/Source/tb_FSM.v:167]
+WARNING: [Synth 8-6896] if statement with non-constant condition is inside initial block, initial block items will be ignored [C:/Users/Dat Pham/Downloads/Source/tb_FSM.v:167]
+WARNING: [Synth 8-6896] if statement with non-constant condition is inside initial block, initial block items will be ignored [C:/Users/Dat Pham/Downloads/Source/tb_FSM.v:167]
+WARNING: [Synth 8-6896] if statement with non-constant condition is inside initial block, initial block items will be ignored [C:/Users/Dat Pham/Downloads/Source/tb_FSM.v:167]
+WARNING: [Synth 8-6896] if statement with non-constant condition is inside initial block, initial block items will be ignored [C:/Users/Dat Pham/Downloads/Source/tb_FSM.v:167]
+WARNING: [Synth 8-6896] if statement with non-constant condition is inside initial block, initial block items will be ignored [C:/Users/Dat Pham/Downloads/Source/tb_FSM.v:167]
+WARNING: [Synth 8-6896] if statement with non-constant condition is inside initial block, initial block items will be ignored [C:/Users/Dat Pham/Downloads/Source/tb_FSM.v:167]
+WARNING: [Synth 8-6896] if statement with non-constant condition is inside initial block, initial block items will be ignored [C:/Users/Dat Pham/Downloads/Source/tb_FSM.v:167]
+WARNING: [Synth 8-6896] if statement with non-constant condition is inside initial block, initial block items will be ignored [C:/Users/Dat Pham/Downloads/Source/tb_FSM.v:167]
+WARNING: [Synth 8-6896] if statement with non-constant condition is inside initial block, initial block items will be ignored [C:/Users/Dat Pham/Downloads/Source/tb_FSM.v:167]
+WARNING: [Synth 8-6896] if statement with non-constant condition is inside initial block, initial block items will be ignored [C:/Users/Dat Pham/Downloads/Source/tb_FSM.v:167]
+WARNING: [Synth 8-6896] if statement with non-constant condition is inside initial block, initial block items will be ignored [C:/Users/Dat Pham/Downloads/Source/tb_FSM.v:167]
+WARNING: [Synth 8-6896] if statement with non-constant condition is inside initial block, initial block items will be ignored [C:/Users/Dat Pham/Downloads/Source/tb_FSM.v:167]
+WARNING: [Synth 8-6896] if statement with non-constant condition is inside initial block, initial block items will be ignored [C:/Users/Dat Pham/Downloads/Source/tb_FSM.v:167]
+WARNING: [Synth 8-6896] if statement with non-constant condition is inside initial block, initial block items will be ignored [C:/Users/Dat Pham/Downloads/Source/tb_FSM.v:167]
+WARNING: [Synth 8-6896] if statement with non-constant condition is inside initial block, initial block items will be ignored [C:/Users/Dat Pham/Downloads/Source/tb_FSM.v:167]
+WARNING: [Synth 8-6896] if statement with non-constant condition is inside initial block, initial block items will be ignored [C:/Users/Dat Pham/Downloads/Source/tb_FSM.v:167]
+WARNING: [Synth 8-6896] if statement with non-constant condition is inside initial block, initial block items will be ignored [C:/Users/Dat Pham/Downloads/Source/tb_FSM.v:167]
+WARNING: [Synth 8-6896] if statement with non-constant condition is inside initial block, initial block items will be ignored [C:/Users/Dat Pham/Downloads/Source/tb_FSM.v:167]
+WARNING: [Synth 8-6896] if statement with non-constant condition is inside initial block, initial block items will be ignored [C:/Users/Dat Pham/Downloads/Source/tb_FSM.v:167]
+WARNING: [Synth 8-6896] if statement with non-constant condition is inside initial block, initial block items will be ignored [C:/Users/Dat Pham/Downloads/Source/tb_FSM.v:167]
+WARNING: [Synth 8-6896] if statement with non-constant condition is inside initial block, initial block items will be ignored [C:/Users/Dat Pham/Downloads/Source/tb_FSM.v:167]
+WARNING: [Synth 8-6896] if statement with non-constant condition is inside initial block, initial block items will be ignored [C:/Users/Dat Pham/Downloads/Source/tb_FSM.v:167]
+WARNING: [Synth 8-6896] if statement with non-constant condition is inside initial block, initial block items will be ignored [C:/Users/Dat Pham/Downloads/Source/tb_FSM.v:167]
+WARNING: [Synth 8-6896] if statement with non-constant condition is inside initial block, initial block items will be ignored [C:/Users/Dat Pham/Downloads/Source/tb_FSM.v:167]
+WARNING: [Synth 8-6896] if statement with non-constant condition is inside initial block, initial block items will be ignored [C:/Users/Dat Pham/Downloads/Source/tb_FSM.v:167]
+WARNING: [Synth 8-6896] if statement with non-constant condition is inside initial block, initial block items will be ignored [C:/Users/Dat Pham/Downloads/Source/tb_FSM.v:167]
+WARNING: [Synth 8-6896] if statement with non-constant condition is inside initial block, initial block items will be ignored [C:/Users/Dat Pham/Downloads/Source/tb_FSM.v:167]
+WARNING: [Synth 8-6896] if statement with non-constant condition is inside initial block, initial block items will be ignored [C:/Users/Dat Pham/Downloads/Source/tb_FSM.v:167]
+WARNING: [Synth 8-6896] if statement with non-constant condition is inside initial block, initial block items will be ignored [C:/Users/Dat Pham/Downloads/Source/tb_FSM.v:167]
+WARNING: [Synth 8-6896] if statement with non-constant condition is inside initial block, initial block items will be ignored [C:/Users/Dat Pham/Downloads/Source/tb_FSM.v:167]
+WARNING: [Synth 8-6896] if statement with non-constant condition is inside initial block, initial block items will be ignored [C:/Users/Dat Pham/Downloads/Source/tb_FSM.v:167]
+WARNING: [Synth 8-6896] if statement with non-constant condition is inside initial block, initial block items will be ignored [C:/Users/Dat Pham/Downloads/Source/tb_FSM.v:167]
+WARNING: [Synth 8-6896] if statement with non-constant condition is inside initial block, initial block items will be ignored [C:/Users/Dat Pham/Downloads/Source/tb_FSM.v:167]
+WARNING: [Synth 8-6896] if statement with non-constant condition is inside initial block, initial block items will be ignored [C:/Users/Dat Pham/Downloads/Source/tb_FSM.v:167]
+WARNING: [Synth 8-6896] if statement with non-constant condition is inside initial block, initial block items will be ignored [C:/Users/Dat Pham/Downloads/Source/tb_FSM.v:167]
+WARNING: [Synth 8-6896] if statement with non-constant condition is inside initial block, initial block items will be ignored [C:/Users/Dat Pham/Downloads/Source/tb_FSM.v:167]
+WARNING: [Synth 8-6896] if statement with non-constant condition is inside initial block, initial block items will be ignored [C:/Users/Dat Pham/Downloads/Source/tb_FSM.v:167]
+WARNING: [Synth 8-6896] if statement with non-constant condition is inside initial block, initial block items will be ignored [C:/Users/Dat Pham/Downloads/Source/tb_FSM.v:167]
+WARNING: [Synth 8-6896] if statement with non-constant condition is inside initial block, initial block items will be ignored [C:/Users/Dat Pham/Downloads/Source/tb_FSM.v:167]
+WARNING: [Synth 8-6896] if statement with non-constant condition is inside initial block, initial block items will be ignored [C:/Users/Dat Pham/Downloads/Source/tb_FSM.v:167]
+WARNING: [Synth 8-6896] if statement with non-constant condition is inside initial block, initial block items will be ignored [C:/Users/Dat Pham/Downloads/Source/tb_FSM.v:167]
+WARNING: [Synth 8-6896] if statement with non-constant condition is inside initial block, initial block items will be ignored [C:/Users/Dat Pham/Downloads/Source/tb_FSM.v:167]
+WARNING: [Synth 8-6896] if statement with non-constant condition is inside initial block, initial block items will be ignored [C:/Users/Dat Pham/Downloads/Source/tb_FSM.v:167]
+WARNING: [Synth 8-6896] if statement with non-constant condition is inside initial block, initial block items will be ignored [C:/Users/Dat Pham/Downloads/Source/tb_FSM.v:167]
+WARNING: [Synth 8-6896] if statement with non-constant condition is inside initial block, initial block items will be ignored [C:/Users/Dat Pham/Downloads/Source/tb_FSM.v:167]
+WARNING: [Synth 8-6896] if statement with non-constant condition is inside initial block, initial block items will be ignored [C:/Users/Dat Pham/Downloads/Source/tb_FSM.v:167]
+WARNING: [Synth 8-6896] if statement with non-constant condition is inside initial block, initial block items will be ignored [C:/Users/Dat Pham/Downloads/Source/tb_FSM.v:167]
+WARNING: [Synth 8-6896] if statement with non-constant condition is inside initial block, initial block items will be ignored [C:/Users/Dat Pham/Downloads/Source/tb_FSM.v:167]
+WARNING: [Synth 8-6896] if statement with non-constant condition is inside initial block, initial block items will be ignored [C:/Users/Dat Pham/Downloads/Source/tb_FSM.v:167]
+WARNING: [Synth 8-6896] if statement with non-constant condition is inside initial block, initial block items will be ignored [C:/Users/Dat Pham/Downloads/Source/tb_FSM.v:167]
+WARNING: [Synth 8-6896] if statement with non-constant condition is inside initial block, initial block items will be ignored [C:/Users/Dat Pham/Downloads/Source/tb_FSM.v:167]
+WARNING: [Synth 8-6896] if statement with non-constant condition is inside initial block, initial block items will be ignored [C:/Users/Dat Pham/Downloads/Source/tb_FSM.v:167]
+WARNING: [Synth 8-6896] if statement with non-constant condition is inside initial block, initial block items will be ignored [C:/Users/Dat Pham/Downloads/Source/tb_FSM.v:167]
+WARNING: [Synth 8-6896] if statement with non-constant condition is inside initial block, initial block items will be ignored [C:/Users/Dat Pham/Downloads/Source/tb_FSM.v:167]
+WARNING: [Synth 8-6896] if statement with non-constant condition is inside initial block, initial block items will be ignored [C:/Users/Dat Pham/Downloads/Source/tb_FSM.v:167]
+WARNING: [Synth 8-6896] if statement with non-constant condition is inside initial block, initial block items will be ignored [C:/Users/Dat Pham/Downloads/Source/tb_FSM.v:167]
+WARNING: [Synth 8-6896] if statement with non-constant condition is inside initial block, initial block items will be ignored [C:/Users/Dat Pham/Downloads/Source/tb_FSM.v:167]
+WARNING: [Synth 8-6896] if statement with non-constant condition is inside initial block, initial block items will be ignored [C:/Users/Dat Pham/Downloads/Source/tb_FSM.v:167]
+WARNING: [Synth 8-6896] if statement with non-constant condition is inside initial block, initial block items will be ignored [C:/Users/Dat Pham/Downloads/Source/tb_FSM.v:167]
+WARNING: [Synth 8-6896] if statement with non-constant condition is inside initial block, initial block items will be ignored [C:/Users/Dat Pham/Downloads/Source/tb_FSM.v:167]
+WARNING: [Synth 8-6896] if statement with non-constant condition is inside initial block, initial block items will be ignored [C:/Users/Dat Pham/Downloads/Source/tb_FSM.v:167]
+WARNING: [Synth 8-6896] if statement with non-constant condition is inside initial block, initial block items will be ignored [C:/Users/Dat Pham/Downloads/Source/tb_FSM.v:167]
+WARNING: [Synth 8-6896] if statement with non-constant condition is inside initial block, initial block items will be ignored [C:/Users/Dat Pham/Downloads/Source/tb_FSM.v:167]
+WARNING: [Synth 8-6896] if statement with non-constant condition is inside initial block, initial block items will be ignored [C:/Users/Dat Pham/Downloads/Source/tb_FSM.v:167]
+WARNING: [Synth 8-6896] if statement with non-constant condition is inside initial block, initial block items will be ignored [C:/Users/Dat Pham/Downloads/Source/tb_FSM.v:167]
+WARNING: [Synth 8-6896] if statement with non-constant condition is inside initial block, initial block items will be ignored [C:/Users/Dat Pham/Downloads/Source/tb_FSM.v:167]
+WARNING: [Synth 8-6896] if statement with non-constant condition is inside initial block, initial block items will be ignored [C:/Users/Dat Pham/Downloads/Source/tb_FSM.v:167]
+WARNING: [Synth 8-6896] if statement with non-constant condition is inside initial block, initial block items will be ignored [C:/Users/Dat Pham/Downloads/Source/tb_FSM.v:167]
+WARNING: [Synth 8-6896] if statement with non-constant condition is inside initial block, initial block items will be ignored [C:/Users/Dat Pham/Downloads/Source/tb_FSM.v:167]
+WARNING: [Synth 8-6896] if statement with non-constant condition is inside initial block, initial block items will be ignored [C:/Users/Dat Pham/Downloads/Source/tb_FSM.v:167]
+WARNING: [Synth 8-6896] if statement with non-constant condition is inside initial block, initial block items will be ignored [C:/Users/Dat Pham/Downloads/Source/tb_FSM.v:167]
+WARNING: [Synth 8-6896] if statement with non-constant condition is inside initial block, initial block items will be ignored [C:/Users/Dat Pham/Downloads/Source/tb_FSM.v:167]
+WARNING: [Synth 8-6896] if statement with non-constant condition is inside initial block, initial block items will be ignored [C:/Users/Dat Pham/Downloads/Source/tb_FSM.v:167]
+WARNING: [Synth 8-6896] if statement with non-constant condition is inside initial block, initial block items will be ignored [C:/Users/Dat Pham/Downloads/Source/tb_FSM.v:167]
+WARNING: [Synth 8-6896] if statement with non-constant condition is inside initial block, initial block items will be ignored [C:/Users/Dat Pham/Downloads/Source/tb_FSM.v:167]
+WARNING: [Synth 8-6896] if statement with non-constant condition is inside initial block, initial block items will be ignored [C:/Users/Dat Pham/Downloads/Source/tb_FSM.v:167]
+WARNING: [Synth 8-6896] if statement with non-constant condition is inside initial block, initial block items will be ignored [C:/Users/Dat Pham/Downloads/Source/tb_FSM.v:167]
+WARNING: [Synth 8-6896] if statement with non-constant condition is inside initial block, initial block items will be ignored [C:/Users/Dat Pham/Downloads/Source/tb_FSM.v:167]
+WARNING: [Synth 8-6896] if statement with non-constant condition is inside initial block, initial block items will be ignored [C:/Users/Dat Pham/Downloads/Source/tb_FSM.v:167]
+WARNING: [Synth 8-6896] if statement with non-constant condition is inside initial block, initial block items will be ignored [C:/Users/Dat Pham/Downloads/Source/tb_FSM.v:167]
+WARNING: [Synth 8-6896] if statement with non-constant condition is inside initial block, initial block items will be ignored [C:/Users/Dat Pham/Downloads/Source/tb_FSM.v:167]
+WARNING: [Synth 8-6896] if statement with non-constant condition is inside initial block, initial block items will be ignored [C:/Users/Dat Pham/Downloads/Source/tb_FSM.v:167]
+WARNING: [Synth 8-6896] if statement with non-constant condition is inside initial block, initial block items will be ignored [C:/Users/Dat Pham/Downloads/Source/tb_FSM.v:167]
+WARNING: [Synth 8-6896] if statement with non-constant condition is inside initial block, initial block items will be ignored [C:/Users/Dat Pham/Downloads/Source/tb_FSM.v:167]
+WARNING: [Synth 8-6896] if statement with non-constant condition is inside initial block, initial block items will be ignored [C:/Users/Dat Pham/Downloads/Source/tb_FSM.v:167]
+WARNING: [Synth 8-6896] if statement with non-constant condition is inside initial block, initial block items will be ignored [C:/Users/Dat Pham/Downloads/Source/tb_FSM.v:167]
+WARNING: [Synth 8-6896] if statement with non-constant condition is inside initial block, initial block items will be ignored [C:/Users/Dat Pham/Downloads/Source/tb_FSM.v:167]
+WARNING: [Synth 8-6896] if statement with non-constant condition is inside initial block, initial block items will be ignored [C:/Users/Dat Pham/Downloads/Source/tb_FSM.v:167]
+WARNING: [Synth 8-6896] if statement with non-constant condition is inside initial block, initial block items will be ignored [C:/Users/Dat Pham/Downloads/Source/tb_FSM.v:167]
+WARNING: [Synth 8-6896] if statement with non-constant condition is inside initial block, initial block items will be ignored [C:/Users/Dat Pham/Downloads/Source/tb_FSM.v:167]
+INFO: [Common 17-14] Message 'Synth 8-6896' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-251] Test Case 0 completed [C:/Users/Dat Pham/Downloads/Source/tb_FSM.v:180]
+INFO: [Synth 8-251] ---------------------------------------- [C:/Users/Dat Pham/Downloads/Source/tb_FSM.v:186]
+INFO: [Synth 8-251] ======================================== [C:/Users/Dat Pham/Downloads/Source/tb_FSM.v:137]
+INFO: [Synth 8-251] Starting Test Case 1 [C:/Users/Dat Pham/Downloads/Source/tb_FSM.v:138]
+INFO: [Synth 8-251] ======================================== [C:/Users/Dat Pham/Downloads/Source/tb_FSM.v:139]
+INFO: [Synth 8-251] SHA256 Input Values: [C:/Users/Dat Pham/Downloads/Source/tb_FSM.v:151]
+INFO: [Synth 8-251] A=12345678, B=9abcdef0, C=fedcba98, D=76543210 [C:/Users/Dat Pham/Downloads/Source/tb_FSM.v:152]
+INFO: [Synth 8-251] E=11111111, F=22222222, G=33333333, H=44444444 [C:/Users/Dat Pham/Downloads/Source/tb_FSM.v:153]
+INFO: [Synth 8-251] Test Case 1 completed [C:/Users/Dat Pham/Downloads/Source/tb_FSM.v:180]
+INFO: [Synth 8-251] ---------------------------------------- [C:/Users/Dat Pham/Downloads/Source/tb_FSM.v:186]
+INFO: [Synth 8-251] ======================================== [C:/Users/Dat Pham/Downloads/Source/tb_FSM.v:137]
+INFO: [Synth 8-251] Starting Test Case 2 [C:/Users/Dat Pham/Downloads/Source/tb_FSM.v:138]
+INFO: [Synth 8-251] ======================================== [C:/Users/Dat Pham/Downloads/Source/tb_FSM.v:139]
+INFO: [Synth 8-251] SHA256 Input Values: [C:/Users/Dat Pham/Downloads/Source/tb_FSM.v:151]
+INFO: [Synth 8-251] A=aaaaaaaa, B=bbbbbbbb, C=cccccccc, D=dddddddd [C:/Users/Dat Pham/Downloads/Source/tb_FSM.v:152]
+INFO: [Synth 8-251] E=eeeeeeee, F=ffffffff, G=0, H=12345678 [C:/Users/Dat Pham/Downloads/Source/tb_FSM.v:153]
+INFO: [Synth 8-251] Test Case 2 completed [C:/Users/Dat Pham/Downloads/Source/tb_FSM.v:180]
+INFO: [Synth 8-251] ---------------------------------------- [C:/Users/Dat Pham/Downloads/Source/tb_FSM.v:186]
+INFO: [Synth 8-251] All test cases completed [C:/Users/Dat Pham/Downloads/Source/tb_FSM.v:197]
+INFO: [Synth 8-6157] synthesizing module 'RISC_SHA' [C:/Users/Dat Pham/Downloads/Source/Top_Sha.v:1]
+INFO: [Synth 8-6157] synthesizing module 'fsm_controller' [C:/Users/Dat Pham/Downloads/Source/FSM_Sha.v:1]
+	Parameter IDLE bound to: 3'b000 
+	Parameter STATE1 bound to: 3'b001 
+	Parameter STATE2 bound to: 3'b010 
+	Parameter STATE3 bound to: 3'b011 
+	Parameter STATE4 bound to: 3'b100 
+	Parameter DONE bound to: 3'b101 
+WARNING: [Synth 8-567] referenced signal 'cnt_w' should be on the sensitivity list [C:/Users/Dat Pham/Downloads/Source/FSM_Sha.v:517]
+INFO: [Synth 8-6155] done synthesizing module 'fsm_controller' (1#1) [C:/Users/Dat Pham/Downloads/Source/FSM_Sha.v:1]
+WARNING: [Synth 8-7071] port 'w0_sha512' of module 'fsm_controller' is unconnected for instance 'fsm_controller' [C:/Users/Dat Pham/Downloads/Source/Top_Sha.v:148]
+WARNING: [Synth 8-7071] port 'w1_sha512' of module 'fsm_controller' is unconnected for instance 'fsm_controller' [C:/Users/Dat Pham/Downloads/Source/Top_Sha.v:148]
+WARNING: [Synth 8-7071] port 'w2_sha512' of module 'fsm_controller' is unconnected for instance 'fsm_controller' [C:/Users/Dat Pham/Downloads/Source/Top_Sha.v:148]
+WARNING: [Synth 8-7071] port 'w3_sha512' of module 'fsm_controller' is unconnected for instance 'fsm_controller' [C:/Users/Dat Pham/Downloads/Source/Top_Sha.v:148]
+WARNING: [Synth 8-7071] port 'w4_sha512' of module 'fsm_controller' is unconnected for instance 'fsm_controller' [C:/Users/Dat Pham/Downloads/Source/Top_Sha.v:148]
+WARNING: [Synth 8-7071] port 'w5_sha512' of module 'fsm_controller' is unconnected for instance 'fsm_controller' [C:/Users/Dat Pham/Downloads/Source/Top_Sha.v:148]
+WARNING: [Synth 8-7071] port 'w6_sha512' of module 'fsm_controller' is unconnected for instance 'fsm_controller' [C:/Users/Dat Pham/Downloads/Source/Top_Sha.v:148]
+WARNING: [Synth 8-7071] port 'w7_sha512' of module 'fsm_controller' is unconnected for instance 'fsm_controller' [C:/Users/Dat Pham/Downloads/Source/Top_Sha.v:148]
+WARNING: [Synth 8-7071] port 'w8_sha512' of module 'fsm_controller' is unconnected for instance 'fsm_controller' [C:/Users/Dat Pham/Downloads/Source/Top_Sha.v:148]
+WARNING: [Synth 8-7071] port 'w9_sha512' of module 'fsm_controller' is unconnected for instance 'fsm_controller' [C:/Users/Dat Pham/Downloads/Source/Top_Sha.v:148]
+WARNING: [Synth 8-7071] port 'w10_sha512' of module 'fsm_controller' is unconnected for instance 'fsm_controller' [C:/Users/Dat Pham/Downloads/Source/Top_Sha.v:148]
+WARNING: [Synth 8-7071] port 'w11_sha512' of module 'fsm_controller' is unconnected for instance 'fsm_controller' [C:/Users/Dat Pham/Downloads/Source/Top_Sha.v:148]
+WARNING: [Synth 8-7071] port 'w12_sha512' of module 'fsm_controller' is unconnected for instance 'fsm_controller' [C:/Users/Dat Pham/Downloads/Source/Top_Sha.v:148]
+WARNING: [Synth 8-7071] port 'w13_sha512' of module 'fsm_controller' is unconnected for instance 'fsm_controller' [C:/Users/Dat Pham/Downloads/Source/Top_Sha.v:148]
+WARNING: [Synth 8-7071] port 'w14_sha512' of module 'fsm_controller' is unconnected for instance 'fsm_controller' [C:/Users/Dat Pham/Downloads/Source/Top_Sha.v:148]
+WARNING: [Synth 8-7071] port 'w15_sha512' of module 'fsm_controller' is unconnected for instance 'fsm_controller' [C:/Users/Dat Pham/Downloads/Source/Top_Sha.v:148]
+WARNING: [Synth 8-7071] port 'A_i2' of module 'fsm_controller' is unconnected for instance 'fsm_controller' [C:/Users/Dat Pham/Downloads/Source/Top_Sha.v:148]
+WARNING: [Synth 8-7071] port 'B_i2' of module 'fsm_controller' is unconnected for instance 'fsm_controller' [C:/Users/Dat Pham/Downloads/Source/Top_Sha.v:148]
+WARNING: [Synth 8-7071] port 'C_i2' of module 'fsm_controller' is unconnected for instance 'fsm_controller' [C:/Users/Dat Pham/Downloads/Source/Top_Sha.v:148]
+WARNING: [Synth 8-7071] port 'D_i2' of module 'fsm_controller' is unconnected for instance 'fsm_controller' [C:/Users/Dat Pham/Downloads/Source/Top_Sha.v:148]
+WARNING: [Synth 8-7071] port 'E_i2' of module 'fsm_controller' is unconnected for instance 'fsm_controller' [C:/Users/Dat Pham/Downloads/Source/Top_Sha.v:148]
+WARNING: [Synth 8-7071] port 'F_i2' of module 'fsm_controller' is unconnected for instance 'fsm_controller' [C:/Users/Dat Pham/Downloads/Source/Top_Sha.v:148]
+WARNING: [Synth 8-7071] port 'G_i2' of module 'fsm_controller' is unconnected for instance 'fsm_controller' [C:/Users/Dat Pham/Downloads/Source/Top_Sha.v:148]
+WARNING: [Synth 8-7071] port 'H_i2' of module 'fsm_controller' is unconnected for instance 'fsm_controller' [C:/Users/Dat Pham/Downloads/Source/Top_Sha.v:148]
+WARNING: [Synth 8-7071] port 'sel_mux2' of module 'fsm_controller' is unconnected for instance 'fsm_controller' [C:/Users/Dat Pham/Downloads/Source/Top_Sha.v:148]
+WARNING: [Synth 8-7071] port 'sel_res512' of module 'fsm_controller' is unconnected for instance 'fsm_controller' [C:/Users/Dat Pham/Downloads/Source/Top_Sha.v:148]
+WARNING: [Synth 8-7071] port 'reg16_out2' of module 'fsm_controller' is unconnected for instance 'fsm_controller' [C:/Users/Dat Pham/Downloads/Source/Top_Sha.v:148]
+WARNING: [Synth 8-7071] port 'sel_parise_mux2' of module 'fsm_controller' is unconnected for instance 'fsm_controller' [C:/Users/Dat Pham/Downloads/Source/Top_Sha.v:148]
+WARNING: [Synth 8-7071] port 'A_o2' of module 'fsm_controller' is unconnected for instance 'fsm_controller' [C:/Users/Dat Pham/Downloads/Source/Top_Sha.v:148]
+WARNING: [Synth 8-7071] port 'B_o2' of module 'fsm_controller' is unconnected for instance 'fsm_controller' [C:/Users/Dat Pham/Downloads/Source/Top_Sha.v:148]
+WARNING: [Synth 8-7071] port 'C_o2' of module 'fsm_controller' is unconnected for instance 'fsm_controller' [C:/Users/Dat Pham/Downloads/Source/Top_Sha.v:148]
+WARNING: [Synth 8-7071] port 'D_o2' of module 'fsm_controller' is unconnected for instance 'fsm_controller' [C:/Users/Dat Pham/Downloads/Source/Top_Sha.v:148]
+WARNING: [Synth 8-7071] port 'E_o2' of module 'fsm_controller' is unconnected for instance 'fsm_controller' [C:/Users/Dat Pham/Downloads/Source/Top_Sha.v:148]
+WARNING: [Synth 8-7071] port 'F_o2' of module 'fsm_controller' is unconnected for instance 'fsm_controller' [C:/Users/Dat Pham/Downloads/Source/Top_Sha.v:148]
+WARNING: [Synth 8-7071] port 'G_o2' of module 'fsm_controller' is unconnected for instance 'fsm_controller' [C:/Users/Dat Pham/Downloads/Source/Top_Sha.v:148]
+WARNING: [Synth 8-7071] port 'H_o2' of module 'fsm_controller' is unconnected for instance 'fsm_controller' [C:/Users/Dat Pham/Downloads/Source/Top_Sha.v:148]
+WARNING: [Synth 8-7071] port 'done_Sha' of module 'fsm_controller' is unconnected for instance 'fsm_controller' [C:/Users/Dat Pham/Downloads/Source/Top_Sha.v:148]
+WARNING: [Synth 8-7023] instance 'fsm_controller' of module 'fsm_controller' has 78 connections declared, but only 41 given [C:/Users/Dat Pham/Downloads/Source/Top_Sha.v:148]
+INFO: [Synth 8-6157] synthesizing module 'mux32_2to1' [C:/Users/Dat Pham/Downloads/Source/Mux32.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'mux32_2to1' (2#1) [C:/Users/Dat Pham/Downloads/Source/Mux32.v:1]
+INFO: [Synth 8-6157] synthesizing module 'register0_32bit' [C:/Users/Dat Pham/Downloads/Source/Reg0.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'register0_32bit' (3#1) [C:/Users/Dat Pham/Downloads/Source/Reg0.v:1]
+INFO: [Synth 8-6157] synthesizing module 'register1_32bit' [C:/Users/Dat Pham/Downloads/Source/Reg1_Sha.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'register1_32bit' (4#1) [C:/Users/Dat Pham/Downloads/Source/Reg1_Sha.v:1]
+INFO: [Synth 8-6157] synthesizing module 'register2_32bit' [C:/Users/Dat Pham/Downloads/Source/Reg2_Sha.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'register2_32bit' (5#1) [C:/Users/Dat Pham/Downloads/Source/Reg2_Sha.v:1]
+INFO: [Synth 8-6157] synthesizing module 'register3_32bit' [C:/Users/Dat Pham/Downloads/Source/Reg3_Sha.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'register3_32bit' (6#1) [C:/Users/Dat Pham/Downloads/Source/Reg3_Sha.v:1]
+INFO: [Synth 8-6157] synthesizing module 'register4_32bit' [C:/Users/Dat Pham/Downloads/Source/Reg4_Sha.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'register4_32bit' (7#1) [C:/Users/Dat Pham/Downloads/Source/Reg4_Sha.v:1]
+INFO: [Synth 8-6157] synthesizing module 'register5_32bit' [C:/Users/Dat Pham/Downloads/Source/Reg5.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'register5_32bit' (8#1) [C:/Users/Dat Pham/Downloads/Source/Reg5.v:1]
+INFO: [Synth 8-6157] synthesizing module 'register6_32bit' [C:/Users/Dat Pham/Downloads/Source/Reg6.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'register6_32bit' (9#1) [C:/Users/Dat Pham/Downloads/Source/Reg6.v:1]
+INFO: [Synth 8-6157] synthesizing module 'register7_32bit' [C:/Users/Dat Pham/Downloads/Source/Reg7.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'register7_32bit' (10#1) [C:/Users/Dat Pham/Downloads/Source/Reg7.v:1]
+INFO: [Synth 8-6157] synthesizing module 'register8_32bit' [C:/Users/Dat Pham/Downloads/Source/Reg8.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'register8_32bit' (11#1) [C:/Users/Dat Pham/Downloads/Source/Reg8.v:1]
+INFO: [Synth 8-6157] synthesizing module 'register9_32bit' [C:/Users/Dat Pham/Downloads/Source/Reg9.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'register9_32bit' (12#1) [C:/Users/Dat Pham/Downloads/Source/Reg9.v:1]
+INFO: [Synth 8-6157] synthesizing module 'register10_32bit' [C:/Users/Dat Pham/Downloads/Source/Reg10.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'register10_32bit' (13#1) [C:/Users/Dat Pham/Downloads/Source/Reg10.v:1]
+INFO: [Synth 8-6157] synthesizing module 'register11_32bit' [C:/Users/Dat Pham/Downloads/Source/Reg11.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'register11_32bit' (14#1) [C:/Users/Dat Pham/Downloads/Source/Reg11.v:1]
+INFO: [Synth 8-6157] synthesizing module 'register12_32bit' [C:/Users/Dat Pham/Downloads/Source/Reg12.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'register12_32bit' (15#1) [C:/Users/Dat Pham/Downloads/Source/Reg12.v:1]
+INFO: [Synth 8-6157] synthesizing module 'register13_32bit' [C:/Users/Dat Pham/Downloads/Source/Reg13.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'register13_32bit' (16#1) [C:/Users/Dat Pham/Downloads/Source/Reg13.v:1]
+INFO: [Synth 8-6157] synthesizing module 'register14_32bit' [C:/Users/Dat Pham/Downloads/Source/Reg14.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'register14_32bit' (17#1) [C:/Users/Dat Pham/Downloads/Source/Reg14.v:1]
+INFO: [Synth 8-6157] synthesizing module 'register15_32bit' [C:/Users/Dat Pham/Downloads/Source/Reg15.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'register15_32bit' (18#1) [C:/Users/Dat Pham/Downloads/Source/Reg15.v:1]
+INFO: [Synth 8-6157] synthesizing module 'delta0' [C:/Users/Dat Pham/Downloads/Source/Delta0.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'delta0' (19#1) [C:/Users/Dat Pham/Downloads/Source/Delta0.v:1]
+INFO: [Synth 8-6157] synthesizing module 'delta1' [C:/Users/Dat Pham/Downloads/Source/Delta1.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'delta1' (20#1) [C:/Users/Dat Pham/Downloads/Source/Delta1.v:1]
+INFO: [Synth 8-6157] synthesizing module 'Adder_Sha' [C:/Users/Dat Pham/Downloads/Source/Adder_Sha.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'Adder_Sha' (21#1) [C:/Users/Dat Pham/Downloads/Source/Adder_Sha.v:1]
+INFO: [Synth 8-6157] synthesizing module 'K_register' [C:/Users/Dat Pham/Downloads/Source/Reg_K.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'K_register' (22#1) [C:/Users/Dat Pham/Downloads/Source/Reg_K.v:3]
+INFO: [Synth 8-6157] synthesizing module 'Adder1' [C:/Users/Dat Pham/Downloads/Source/Adder1.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'Adder1' (23#1) [C:/Users/Dat Pham/Downloads/Source/Adder1.v:1]
+INFO: [Synth 8-6157] synthesizing module 'pairwise_mux' [C:/Users/Dat Pham/Downloads/Source/Parise_mux.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'pairwise_mux' (24#1) [C:/Users/Dat Pham/Downloads/Source/Parise_mux.v:3]
+INFO: [Synth 8-6157] synthesizing module 'registerA_32bit' [C:/Users/Dat Pham/Downloads/Source/Reg_A.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'registerA_32bit' (25#1) [C:/Users/Dat Pham/Downloads/Source/Reg_A.v:1]
+INFO: [Synth 8-6157] synthesizing module 'registerB_32bit' [C:/Users/Dat Pham/Downloads/Source/Reg_B.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'registerB_32bit' (26#1) [C:/Users/Dat Pham/Downloads/Source/Reg_B.v:1]
+INFO: [Synth 8-6157] synthesizing module 'registerC_32bit' [C:/Users/Dat Pham/Downloads/Source/Reg_C.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'registerC_32bit' (27#1) [C:/Users/Dat Pham/Downloads/Source/Reg_C.v:1]
+INFO: [Synth 8-6157] synthesizing module 'registerD_32bit' [C:/Users/Dat Pham/Downloads/Source/Reg_D.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'registerD_32bit' (28#1) [C:/Users/Dat Pham/Downloads/Source/Reg_D.v:1]
+INFO: [Synth 8-6157] synthesizing module 'registerE_32bit' [C:/Users/Dat Pham/Downloads/Source/Reg_E.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'registerE_32bit' (29#1) [C:/Users/Dat Pham/Downloads/Source/Reg_E.v:1]
+INFO: [Synth 8-6157] synthesizing module 'registerF_32bit' [C:/Users/Dat Pham/Downloads/Source/Reg_F.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'registerF_32bit' (30#1) [C:/Users/Dat Pham/Downloads/Source/Reg_F.v:1]
+INFO: [Synth 8-6157] synthesizing module 'registerG_32bit' [C:/Users/Dat Pham/Downloads/Source/Reg_G.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'registerG_32bit' (31#1) [C:/Users/Dat Pham/Downloads/Source/Reg_G.v:1]
+INFO: [Synth 8-6157] synthesizing module 'registerH_32bit' [C:/Users/Dat Pham/Downloads/Source/Reg_H.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'registerH_32bit' (32#1) [C:/Users/Dat Pham/Downloads/Source/Reg_H.v:1]
+INFO: [Synth 8-6157] synthesizing module 'Choice' [C:/Users/Dat Pham/Downloads/Source/Ch.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'Choice' (33#1) [C:/Users/Dat Pham/Downloads/Source/Ch.v:1]
+INFO: [Synth 8-6157] synthesizing module 'Sigma1' [C:/Users/Dat Pham/Downloads/Source/Sigma1.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'Sigma1' (34#1) [C:/Users/Dat Pham/Downloads/Source/Sigma1.v:1]
+INFO: [Synth 8-6157] synthesizing module 'Adder2' [C:/Users/Dat Pham/Downloads/Source/Adder2.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'Adder2' (35#1) [C:/Users/Dat Pham/Downloads/Source/Adder2.v:1]
+INFO: [Synth 8-6157] synthesizing module 'Adder3' [C:/Users/Dat Pham/Downloads/Source/Adder3.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'Adder3' (36#1) [C:/Users/Dat Pham/Downloads/Source/Adder3.v:1]
+INFO: [Synth 8-6157] synthesizing module 'Majority' [C:/Users/Dat Pham/Downloads/Source/Maj.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'Majority' (37#1) [C:/Users/Dat Pham/Downloads/Source/Maj.v:1]
+INFO: [Synth 8-6157] synthesizing module 'Sigma0' [C:/Users/Dat Pham/Downloads/Source/Sigma0.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'Sigma0' (38#1) [C:/Users/Dat Pham/Downloads/Source/Sigma0.v:1]
+INFO: [Synth 8-6157] synthesizing module 'Adder4' [C:/Users/Dat Pham/Downloads/Source/Adder4.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'Adder4' (39#1) [C:/Users/Dat Pham/Downloads/Source/Adder4.v:1]
+INFO: [Synth 8-6157] synthesizing module 'registerI_32bit' [C:/Users/Dat Pham/Downloads/Source/RegI.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'registerI_32bit' (40#1) [C:/Users/Dat Pham/Downloads/Source/RegI.v:1]
+INFO: [Synth 8-6157] synthesizing module 'registerJ_32bit' [C:/Users/Dat Pham/Downloads/Source/Reg_J.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'registerJ_32bit' (41#1) [C:/Users/Dat Pham/Downloads/Source/Reg_J.v:1]
+INFO: [Synth 8-6157] synthesizing module 'register_32bit' [C:/Users/Dat Pham/Downloads/Source/Reg32.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'register_32bit' (42#1) [C:/Users/Dat Pham/Downloads/Source/Reg32.v:1]
+INFO: [Synth 8-6157] synthesizing module 'mux32_2to1_64bit' [C:/Users/Dat Pham/Downloads/Source/Mux32_64.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'mux32_2to1_64bit' (43#1) [C:/Users/Dat Pham/Downloads/Source/Mux32_64.v:1]
+INFO: [Synth 8-6157] synthesizing module 'register0_64bit' [C:/Users/Dat Pham/Downloads/Source/Reg0_64.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'register0_64bit' (44#1) [C:/Users/Dat Pham/Downloads/Source/Reg0_64.v:1]
+INFO: [Synth 8-6157] synthesizing module 'register1_64bit' [C:/Users/Dat Pham/Downloads/Source/Reg1_64.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'register1_64bit' (45#1) [C:/Users/Dat Pham/Downloads/Source/Reg1_64.v:1]
+INFO: [Synth 8-6157] synthesizing module 'register2_64bit' [C:/Users/Dat Pham/Downloads/Source/Reg2_64.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'register2_64bit' (46#1) [C:/Users/Dat Pham/Downloads/Source/Reg2_64.v:1]
+INFO: [Synth 8-6157] synthesizing module 'register3_64bit' [C:/Users/Dat Pham/Downloads/Source/Reg3_64.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'register3_64bit' (47#1) [C:/Users/Dat Pham/Downloads/Source/Reg3_64.v:1]
+INFO: [Synth 8-6157] synthesizing module 'register4_64bit' [C:/Users/Dat Pham/Downloads/Source/Reg4_64.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'register4_64bit' (48#1) [C:/Users/Dat Pham/Downloads/Source/Reg4_64.v:1]
+INFO: [Synth 8-6157] synthesizing module 'register5_64bit' [C:/Users/Dat Pham/Downloads/Source/Reg5_64.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'register5_64bit' (49#1) [C:/Users/Dat Pham/Downloads/Source/Reg5_64.v:1]
+INFO: [Synth 8-6157] synthesizing module 'register6_64bit' [C:/Users/Dat Pham/Downloads/Source/Reg6_64.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'register6_64bit' (50#1) [C:/Users/Dat Pham/Downloads/Source/Reg6_64.v:1]
+INFO: [Synth 8-6157] synthesizing module 'register7_64bit' [C:/Users/Dat Pham/Downloads/Source/Reg7_64.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'register7_64bit' (51#1) [C:/Users/Dat Pham/Downloads/Source/Reg7_64.v:1]
+INFO: [Synth 8-6157] synthesizing module 'register8_64bit' [C:/Users/Dat Pham/Downloads/Source/Reg8_64.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'register8_64bit' (52#1) [C:/Users/Dat Pham/Downloads/Source/Reg8_64.v:1]
+INFO: [Synth 8-6157] synthesizing module 'register9_64bit' [C:/Users/Dat Pham/Downloads/Source/Reg9_64.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'register9_64bit' (53#1) [C:/Users/Dat Pham/Downloads/Source/Reg9_64.v:1]
+INFO: [Synth 8-6157] synthesizing module 'register10_64bit' [C:/Users/Dat Pham/Downloads/Source/Reg10_64.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'register10_64bit' (54#1) [C:/Users/Dat Pham/Downloads/Source/Reg10_64.v:1]
+INFO: [Synth 8-6157] synthesizing module 'register11_64bit' [C:/Users/Dat Pham/Downloads/Source/Reg11_64.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'register11_64bit' (55#1) [C:/Users/Dat Pham/Downloads/Source/Reg11_64.v:1]
+INFO: [Synth 8-6157] synthesizing module 'register12_64bit' [C:/Users/Dat Pham/Downloads/Source/Reg12_64.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'register12_64bit' (56#1) [C:/Users/Dat Pham/Downloads/Source/Reg12_64.v:1]
+INFO: [Synth 8-6157] synthesizing module 'register13_64bit' [C:/Users/Dat Pham/Downloads/Source/Reg13_64.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'register13_64bit' (57#1) [C:/Users/Dat Pham/Downloads/Source/Reg13_64.v:1]
+INFO: [Synth 8-6157] synthesizing module 'register14_64bit' [C:/Users/Dat Pham/Downloads/Source/Reg14_64.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'register14_64bit' (58#1) [C:/Users/Dat Pham/Downloads/Source/Reg14_64.v:1]
+INFO: [Synth 8-6157] synthesizing module 'register15_64bit' [C:/Users/Dat Pham/Downloads/Source/Reg15_64.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'register15_64bit' (59#1) [C:/Users/Dat Pham/Downloads/Source/Reg15_64.v:1]
+INFO: [Synth 8-6157] synthesizing module 'delta0_64bit' [C:/Users/Dat Pham/Downloads/Source/Delta0_64.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'delta0_64bit' (60#1) [C:/Users/Dat Pham/Downloads/Source/Delta0_64.v:1]
+INFO: [Synth 8-6157] synthesizing module 'delta1_64bit' [C:/Users/Dat Pham/Downloads/Source/Delta1_64.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'delta1_64bit' (61#1) [C:/Users/Dat Pham/Downloads/Source/Delta1_64.v:1]
+INFO: [Synth 8-6157] synthesizing module 'Sigma0_64bit' [C:/Users/Dat Pham/Downloads/Source/Sigma0_64.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'Sigma0_64bit' (62#1) [C:/Users/Dat Pham/Downloads/Source/Sigma0_64.v:1]
+INFO: [Synth 8-6157] synthesizing module 'Sigma1_64bit' [C:/Users/Dat Pham/Downloads/Source/Sigma1_64.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'Sigma1_64bit' (63#1) [C:/Users/Dat Pham/Downloads/Source/Sigma1_64.v:1]
+INFO: [Synth 8-6157] synthesizing module 'Adder_64bit' [C:/Users/Dat Pham/Downloads/Source/Adder_64.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'Adder_64bit' (64#1) [C:/Users/Dat Pham/Downloads/Source/Adder_64.v:1]
+INFO: [Synth 8-6157] synthesizing module 'K_register_64bit' [C:/Users/Dat Pham/Downloads/Source/Reg_K_64.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'K_register_64bit' (65#1) [C:/Users/Dat Pham/Downloads/Source/Reg_K_64.v:3]
+INFO: [Synth 8-6157] synthesizing module 'Adder1_64bit' [C:/Users/Dat Pham/Downloads/Source/Adder1_64.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'Adder1_64bit' (66#1) [C:/Users/Dat Pham/Downloads/Source/Adder1_64.v:1]
+INFO: [Synth 8-6157] synthesizing module 'pairwise_mux_64bit' [C:/Users/Dat Pham/Downloads/Source/Parise_mux64.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'pairwise_mux_64bit' (67#1) [C:/Users/Dat Pham/Downloads/Source/Parise_mux64.v:3]
+INFO: [Synth 8-6157] synthesizing module 'registerA_64bit' [C:/Users/Dat Pham/Downloads/Source/Reg_A_64.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'registerA_64bit' (68#1) [C:/Users/Dat Pham/Downloads/Source/Reg_A_64.v:1]
+INFO: [Synth 8-6157] synthesizing module 'registerB_64bit' [C:/Users/Dat Pham/Downloads/Source/Reg_B_64.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'registerB_64bit' (69#1) [C:/Users/Dat Pham/Downloads/Source/Reg_B_64.v:1]
+INFO: [Synth 8-6157] synthesizing module 'registerC_64bit' [C:/Users/Dat Pham/Downloads/Source/Reg_C_64.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'registerC_64bit' (70#1) [C:/Users/Dat Pham/Downloads/Source/Reg_C_64.v:1]
+INFO: [Synth 8-6157] synthesizing module 'registerD_64bit' [C:/Users/Dat Pham/Downloads/Source/Reg_D_64.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'registerD_64bit' (71#1) [C:/Users/Dat Pham/Downloads/Source/Reg_D_64.v:1]
+INFO: [Synth 8-6157] synthesizing module 'registerE_64bit' [C:/Users/Dat Pham/Downloads/Source/Reg_E_64.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'registerE_64bit' (72#1) [C:/Users/Dat Pham/Downloads/Source/Reg_E_64.v:1]
+INFO: [Synth 8-6157] synthesizing module 'registerF_64bit' [C:/Users/Dat Pham/Downloads/Source/Reg_F_64.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'registerF_64bit' (73#1) [C:/Users/Dat Pham/Downloads/Source/Reg_F_64.v:1]
+INFO: [Synth 8-6157] synthesizing module 'registerG_64bit' [C:/Users/Dat Pham/Downloads/Source/Reg_G_64.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'registerG_64bit' (74#1) [C:/Users/Dat Pham/Downloads/Source/Reg_G_64.v:1]
+INFO: [Synth 8-6157] synthesizing module 'registerH_64bit' [C:/Users/Dat Pham/Downloads/Source/Reg_H_64.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'registerH_64bit' (75#1) [C:/Users/Dat Pham/Downloads/Source/Reg_H_64.v:1]
+INFO: [Synth 8-6157] synthesizing module 'Choice_64bit' [C:/Users/Dat Pham/Downloads/Source/CH_64.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'Choice_64bit' (76#1) [C:/Users/Dat Pham/Downloads/Source/CH_64.v:1]
+INFO: [Synth 8-6157] synthesizing module 'Adder2_64bit' [C:/Users/Dat Pham/Downloads/Source/Adder2_64.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'Adder2_64bit' (77#1) [C:/Users/Dat Pham/Downloads/Source/Adder2_64.v:1]
+INFO: [Synth 8-6157] synthesizing module 'Adder3_64bit' [C:/Users/Dat Pham/Downloads/Source/Adder3_64.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'Adder3_64bit' (78#1) [C:/Users/Dat Pham/Downloads/Source/Adder3_64.v:1]
+INFO: [Synth 8-6157] synthesizing module 'Majority_64bit' [C:/Users/Dat Pham/Downloads/Source/Maj_64.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'Majority_64bit' (79#1) [C:/Users/Dat Pham/Downloads/Source/Maj_64.v:1]
+INFO: [Synth 8-6157] synthesizing module 'Adder4_64bit' [C:/Users/Dat Pham/Downloads/Source/Adder4_64.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'Adder4_64bit' (80#1) [C:/Users/Dat Pham/Downloads/Source/Adder4_64.v:1]
+INFO: [Synth 8-6157] synthesizing module 'register_64bit' [C:/Users/Dat Pham/Downloads/Source/Reg32_64.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'register_64bit' (81#1) [C:/Users/Dat Pham/Downloads/Source/Reg32_64.v:1]
+INFO: [Synth 8-6157] synthesizing module 'Reg_res_sha' [C:/Users/Dat Pham/Downloads/Source/Reg_res256.v:2]
+INFO: [Synth 8-6155] done synthesizing module 'Reg_res_sha' (82#1) [C:/Users/Dat Pham/Downloads/Source/Reg_res256.v:2]
+INFO: [Synth 8-6157] synthesizing module 'mux_3to1_512bit' [C:/Users/Dat Pham/Downloads/Source/Mux_res_sha.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'mux_3to1_512bit' (83#1) [C:/Users/Dat Pham/Downloads/Source/Mux_res_sha.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'RISC_SHA' (84#1) [C:/Users/Dat Pham/Downloads/Source/Top_Sha.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'RISC_Sha_tb' (85#1) [C:/Users/Dat Pham/Downloads/Source/tb_FSM.v:3]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 1704.898 ; gain = 206.328
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 1722.824 ; gain = 224.254
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 1722.824 ; gain = 224.254
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.187 . Memory (MB): peak = 1722.824 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/Dat Pham/Downloads/Source/timing_constraints.sdc]
+WARNING: [Vivado 12-584] No ports matched 'clk'. [C:/Users/Dat Pham/Downloads/Source/timing_constraints.sdc:6]
+CRITICAL WARNING: [Vivado 12-4739] create_clock:No valid object(s) found for '-objects [get_ports clk]'. [C:/Users/Dat Pham/Downloads/Source/timing_constraints.sdc:6]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-584] No ports matched 'reset'. [C:/Users/Dat Pham/Downloads/Source/timing_constraints.sdc:13]
+WARNING: [Vivado 12-584] No ports matched 'start_in'. [C:/Users/Dat Pham/Downloads/Source/timing_constraints.sdc:13]
+WARNING: [Vivado 12-646] clock 'clk' not found. [C:/Users/Dat Pham/Downloads/Source/timing_constraints.sdc:13]
+CRITICAL WARNING: [Vivado 12-4739] set_input_delay:No valid object(s) found for '-objects [get_ports {reset start_in}]'. [C:/Users/Dat Pham/Downloads/Source/timing_constraints.sdc:13]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-584] No ports matched 'reset'. [C:/Users/Dat Pham/Downloads/Source/timing_constraints.sdc:14]
+WARNING: [Vivado 12-584] No ports matched 'start_in'. [C:/Users/Dat Pham/Downloads/Source/timing_constraints.sdc:14]
+WARNING: [Vivado 12-646] clock 'clk' not found. [C:/Users/Dat Pham/Downloads/Source/timing_constraints.sdc:14]
+CRITICAL WARNING: [Vivado 12-4739] set_input_delay:No valid object(s) found for '-objects [get_ports {reset start_in}]'. [C:/Users/Dat Pham/Downloads/Source/timing_constraints.sdc:14]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-584] No ports matched 'A_i[*]'. [C:/Users/Dat Pham/Downloads/Source/timing_constraints.sdc:17]
+WARNING: [Vivado 12-646] clock 'clk' not found. [C:/Users/Dat Pham/Downloads/Source/timing_constraints.sdc:17]
+CRITICAL WARNING: [Vivado 12-4739] set_input_delay:No valid object(s) found for '-objects [get_ports {A_i[*]}]'. [C:/Users/Dat Pham/Downloads/Source/timing_constraints.sdc:17]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-584] No ports matched 'A_i[*]'. [C:/Users/Dat Pham/Downloads/Source/timing_constraints.sdc:18]
+WARNING: [Vivado 12-646] clock 'clk' not found. [C:/Users/Dat Pham/Downloads/Source/timing_constraints.sdc:18]
+CRITICAL WARNING: [Vivado 12-4739] set_input_delay:No valid object(s) found for '-objects [get_ports {A_i[*]}]'. [C:/Users/Dat Pham/Downloads/Source/timing_constraints.sdc:18]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-584] No ports matched 'B_i[*]'. [C:/Users/Dat Pham/Downloads/Source/timing_constraints.sdc:19]
+WARNING: [Vivado 12-646] clock 'clk' not found. [C:/Users/Dat Pham/Downloads/Source/timing_constraints.sdc:19]
+CRITICAL WARNING: [Vivado 12-4739] set_input_delay:No valid object(s) found for '-objects [get_ports {B_i[*]}]'. [C:/Users/Dat Pham/Downloads/Source/timing_constraints.sdc:19]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-584] No ports matched 'B_i[*]'. [C:/Users/Dat Pham/Downloads/Source/timing_constraints.sdc:20]
+WARNING: [Vivado 12-646] clock 'clk' not found. [C:/Users/Dat Pham/Downloads/Source/timing_constraints.sdc:20]
+CRITICAL WARNING: [Vivado 12-4739] set_input_delay:No valid object(s) found for '-objects [get_ports {B_i[*]}]'. [C:/Users/Dat Pham/Downloads/Source/timing_constraints.sdc:20]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-584] No ports matched 'C_i[*]'. [C:/Users/Dat Pham/Downloads/Source/timing_constraints.sdc:21]
+WARNING: [Vivado 12-646] clock 'clk' not found. [C:/Users/Dat Pham/Downloads/Source/timing_constraints.sdc:21]
+CRITICAL WARNING: [Vivado 12-4739] set_input_delay:No valid object(s) found for '-objects [get_ports {C_i[*]}]'. [C:/Users/Dat Pham/Downloads/Source/timing_constraints.sdc:21]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-584] No ports matched 'C_i[*]'. [C:/Users/Dat Pham/Downloads/Source/timing_constraints.sdc:22]
+WARNING: [Vivado 12-646] clock 'clk' not found. [C:/Users/Dat Pham/Downloads/Source/timing_constraints.sdc:22]
+CRITICAL WARNING: [Vivado 12-4739] set_input_delay:No valid object(s) found for '-objects [get_ports {C_i[*]}]'. [C:/Users/Dat Pham/Downloads/Source/timing_constraints.sdc:22]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-584] No ports matched 'D_i[*]'. [C:/Users/Dat Pham/Downloads/Source/timing_constraints.sdc:23]
+WARNING: [Vivado 12-646] clock 'clk' not found. [C:/Users/Dat Pham/Downloads/Source/timing_constraints.sdc:23]
+CRITICAL WARNING: [Vivado 12-4739] set_input_delay:No valid object(s) found for '-objects [get_ports {D_i[*]}]'. [C:/Users/Dat Pham/Downloads/Source/timing_constraints.sdc:23]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-584] No ports matched 'D_i[*]'. [C:/Users/Dat Pham/Downloads/Source/timing_constraints.sdc:24]
+WARNING: [Vivado 12-646] clock 'clk' not found. [C:/Users/Dat Pham/Downloads/Source/timing_constraints.sdc:24]
+CRITICAL WARNING: [Vivado 12-4739] set_input_delay:No valid object(s) found for '-objects [get_ports {D_i[*]}]'. [C:/Users/Dat Pham/Downloads/Source/timing_constraints.sdc:24]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-584] No ports matched 'E_i[*]'. [C:/Users/Dat Pham/Downloads/Source/timing_constraints.sdc:25]
+WARNING: [Vivado 12-646] clock 'clk' not found. [C:/Users/Dat Pham/Downloads/Source/timing_constraints.sdc:25]
+CRITICAL WARNING: [Vivado 12-4739] set_input_delay:No valid object(s) found for '-objects [get_ports {E_i[*]}]'. [C:/Users/Dat Pham/Downloads/Source/timing_constraints.sdc:25]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-584] No ports matched 'E_i[*]'. [C:/Users/Dat Pham/Downloads/Source/timing_constraints.sdc:26]
+WARNING: [Vivado 12-646] clock 'clk' not found. [C:/Users/Dat Pham/Downloads/Source/timing_constraints.sdc:26]
+CRITICAL WARNING: [Vivado 12-4739] set_input_delay:No valid object(s) found for '-objects [get_ports {E_i[*]}]'. [C:/Users/Dat Pham/Downloads/Source/timing_constraints.sdc:26]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-584] No ports matched 'F_i[*]'. [C:/Users/Dat Pham/Downloads/Source/timing_constraints.sdc:27]
+WARNING: [Vivado 12-646] clock 'clk' not found. [C:/Users/Dat Pham/Downloads/Source/timing_constraints.sdc:27]
+CRITICAL WARNING: [Vivado 12-4739] set_input_delay:No valid object(s) found for '-objects [get_ports {F_i[*]}]'. [C:/Users/Dat Pham/Downloads/Source/timing_constraints.sdc:27]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-584] No ports matched 'F_i[*]'. [C:/Users/Dat Pham/Downloads/Source/timing_constraints.sdc:28]
+WARNING: [Vivado 12-646] clock 'clk' not found. [C:/Users/Dat Pham/Downloads/Source/timing_constraints.sdc:28]
+CRITICAL WARNING: [Vivado 12-4739] set_input_delay:No valid object(s) found for '-objects [get_ports {F_i[*]}]'. [C:/Users/Dat Pham/Downloads/Source/timing_constraints.sdc:28]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-584] No ports matched 'G_i[*]'. [C:/Users/Dat Pham/Downloads/Source/timing_constraints.sdc:29]
+WARNING: [Vivado 12-646] clock 'clk' not found. [C:/Users/Dat Pham/Downloads/Source/timing_constraints.sdc:29]
+CRITICAL WARNING: [Vivado 12-4739] set_input_delay:No valid object(s) found for '-objects [get_ports {G_i[*]}]'. [C:/Users/Dat Pham/Downloads/Source/timing_constraints.sdc:29]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-584] No ports matched 'G_i[*]'. [C:/Users/Dat Pham/Downloads/Source/timing_constraints.sdc:30]
+WARNING: [Vivado 12-646] clock 'clk' not found. [C:/Users/Dat Pham/Downloads/Source/timing_constraints.sdc:30]
+CRITICAL WARNING: [Vivado 12-4739] set_input_delay:No valid object(s) found for '-objects [get_ports {G_i[*]}]'. [C:/Users/Dat Pham/Downloads/Source/timing_constraints.sdc:30]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-584] No ports matched 'H_i[*]'. [C:/Users/Dat Pham/Downloads/Source/timing_constraints.sdc:31]
+WARNING: [Vivado 12-646] clock 'clk' not found. [C:/Users/Dat Pham/Downloads/Source/timing_constraints.sdc:31]
+CRITICAL WARNING: [Vivado 12-4739] set_input_delay:No valid object(s) found for '-objects [get_ports {H_i[*]}]'. [C:/Users/Dat Pham/Downloads/Source/timing_constraints.sdc:31]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-584] No ports matched 'H_i[*]'. [C:/Users/Dat Pham/Downloads/Source/timing_constraints.sdc:32]
+WARNING: [Vivado 12-646] clock 'clk' not found. [C:/Users/Dat Pham/Downloads/Source/timing_constraints.sdc:32]
+CRITICAL WARNING: [Vivado 12-4739] set_input_delay:No valid object(s) found for '-objects [get_ports {H_i[*]}]'. [C:/Users/Dat Pham/Downloads/Source/timing_constraints.sdc:32]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-584] No ports matched 'w0_sha256[*]'. [C:/Users/Dat Pham/Downloads/Source/timing_constraints.sdc:35]
+WARNING: [Vivado 12-646] clock 'clk' not found. [C:/Users/Dat Pham/Downloads/Source/timing_constraints.sdc:35]
+CRITICAL WARNING: [Vivado 12-4739] set_input_delay:No valid object(s) found for '-objects [get_ports {w0_sha256[*]}]'. [C:/Users/Dat Pham/Downloads/Source/timing_constraints.sdc:35]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-584] No ports matched 'w0_sha256[*]'. [C:/Users/Dat Pham/Downloads/Source/timing_constraints.sdc:36]
+WARNING: [Vivado 12-646] clock 'clk' not found. [C:/Users/Dat Pham/Downloads/Source/timing_constraints.sdc:36]
+CRITICAL WARNING: [Vivado 12-4739] set_input_delay:No valid object(s) found for '-objects [get_ports {w0_sha256[*]}]'. [C:/Users/Dat Pham/Downloads/Source/timing_constraints.sdc:36]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-584] No ports matched 'w1_sha256[*]'. [C:/Users/Dat Pham/Downloads/Source/timing_constraints.sdc:37]
+WARNING: [Vivado 12-646] clock 'clk' not found. [C:/Users/Dat Pham/Downloads/Source/timing_constraints.sdc:37]
+CRITICAL WARNING: [Vivado 12-4739] set_input_delay:No valid object(s) found for '-objects [get_ports {w1_sha256[*]}]'. [C:/Users/Dat Pham/Downloads/Source/timing_constraints.sdc:37]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-584] No ports matched 'w1_sha256[*]'. [C:/Users/Dat Pham/Downloads/Source/timing_constraints.sdc:38]
+WARNING: [Vivado 12-646] clock 'clk' not found. [C:/Users/Dat Pham/Downloads/Source/timing_constraints.sdc:38]
+CRITICAL WARNING: [Vivado 12-4739] set_input_delay:No valid object(s) found for '-objects [get_ports {w1_sha256[*]}]'. [C:/Users/Dat Pham/Downloads/Source/timing_constraints.sdc:38]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-584] No ports matched 'w2_sha256[*]'. [C:/Users/Dat Pham/Downloads/Source/timing_constraints.sdc:39]
+WARNING: [Vivado 12-646] clock 'clk' not found. [C:/Users/Dat Pham/Downloads/Source/timing_constraints.sdc:39]
+CRITICAL WARNING: [Vivado 12-4739] set_input_delay:No valid object(s) found for '-objects [get_ports {w2_sha256[*]}]'. [C:/Users/Dat Pham/Downloads/Source/timing_constraints.sdc:39]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-584] No ports matched 'w2_sha256[*]'. [C:/Users/Dat Pham/Downloads/Source/timing_constraints.sdc:40]
+WARNING: [Vivado 12-646] clock 'clk' not found. [C:/Users/Dat Pham/Downloads/Source/timing_constraints.sdc:40]
+CRITICAL WARNING: [Vivado 12-4739] set_input_delay:No valid object(s) found for '-objects [get_ports {w2_sha256[*]}]'. [C:/Users/Dat Pham/Downloads/Source/timing_constraints.sdc:40]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-584] No ports matched 'w3_sha256[*]'. [C:/Users/Dat Pham/Downloads/Source/timing_constraints.sdc:41]
+WARNING: [Vivado 12-646] clock 'clk' not found. [C:/Users/Dat Pham/Downloads/Source/timing_constraints.sdc:41]
+CRITICAL WARNING: [Vivado 12-4739] set_input_delay:No valid object(s) found for '-objects [get_ports {w3_sha256[*]}]'. [C:/Users/Dat Pham/Downloads/Source/timing_constraints.sdc:41]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-584] No ports matched 'w3_sha256[*]'. [C:/Users/Dat Pham/Downloads/Source/timing_constraints.sdc:42]
+WARNING: [Vivado 12-646] clock 'clk' not found. [C:/Users/Dat Pham/Downloads/Source/timing_constraints.sdc:42]
+CRITICAL WARNING: [Vivado 12-4739] set_input_delay:No valid object(s) found for '-objects [get_ports {w3_sha256[*]}]'. [C:/Users/Dat Pham/Downloads/Source/timing_constraints.sdc:42]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-584] No ports matched 'w4_sha256[*]'. [C:/Users/Dat Pham/Downloads/Source/timing_constraints.sdc:43]
+WARNING: [Vivado 12-646] clock 'clk' not found. [C:/Users/Dat Pham/Downloads/Source/timing_constraints.sdc:43]
+CRITICAL WARNING: [Vivado 12-4739] set_input_delay:No valid object(s) found for '-objects [get_ports {w4_sha256[*]}]'. [C:/Users/Dat Pham/Downloads/Source/timing_constraints.sdc:43]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-584] No ports matched 'w4_sha256[*]'. [C:/Users/Dat Pham/Downloads/Source/timing_constraints.sdc:44]
+WARNING: [Vivado 12-646] clock 'clk' not found. [C:/Users/Dat Pham/Downloads/Source/timing_constraints.sdc:44]
+CRITICAL WARNING: [Vivado 12-4739] set_input_delay:No valid object(s) found for '-objects [get_ports {w4_sha256[*]}]'. [C:/Users/Dat Pham/Downloads/Source/timing_constraints.sdc:44]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-584] No ports matched 'w5_sha256[*]'. [C:/Users/Dat Pham/Downloads/Source/timing_constraints.sdc:45]
+WARNING: [Vivado 12-646] clock 'clk' not found. [C:/Users/Dat Pham/Downloads/Source/timing_constraints.sdc:45]
+CRITICAL WARNING: [Vivado 12-4739] set_input_delay:No valid object(s) found for '-objects [get_ports {w5_sha256[*]}]'. [C:/Users/Dat Pham/Downloads/Source/timing_constraints.sdc:45]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-584] No ports matched 'w5_sha256[*]'. [C:/Users/Dat Pham/Downloads/Source/timing_constraints.sdc:46]
+WARNING: [Vivado 12-646] clock 'clk' not found. [C:/Users/Dat Pham/Downloads/Source/timing_constraints.sdc:46]
+CRITICAL WARNING: [Vivado 12-4739] set_input_delay:No valid object(s) found for '-objects [get_ports {w5_sha256[*]}]'. [C:/Users/Dat Pham/Downloads/Source/timing_constraints.sdc:46]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-584] No ports matched 'w6_sha256[*]'. [C:/Users/Dat Pham/Downloads/Source/timing_constraints.sdc:47]
+WARNING: [Vivado 12-646] clock 'clk' not found. [C:/Users/Dat Pham/Downloads/Source/timing_constraints.sdc:47]
+CRITICAL WARNING: [Vivado 12-4739] set_input_delay:No valid object(s) found for '-objects [get_ports {w6_sha256[*]}]'. [C:/Users/Dat Pham/Downloads/Source/timing_constraints.sdc:47]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-584] No ports matched 'w6_sha256[*]'. [C:/Users/Dat Pham/Downloads/Source/timing_constraints.sdc:48]
+WARNING: [Vivado 12-646] clock 'clk' not found. [C:/Users/Dat Pham/Downloads/Source/timing_constraints.sdc:48]
+CRITICAL WARNING: [Vivado 12-4739] set_input_delay:No valid object(s) found for '-objects [get_ports {w6_sha256[*]}]'. [C:/Users/Dat Pham/Downloads/Source/timing_constraints.sdc:48]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-584] No ports matched 'w7_sha256[*]'. [C:/Users/Dat Pham/Downloads/Source/timing_constraints.sdc:49]
+WARNING: [Vivado 12-646] clock 'clk' not found. [C:/Users/Dat Pham/Downloads/Source/timing_constraints.sdc:49]
+CRITICAL WARNING: [Vivado 12-4739] set_input_delay:No valid object(s) found for '-objects [get_ports {w7_sha256[*]}]'. [C:/Users/Dat Pham/Downloads/Source/timing_constraints.sdc:49]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-584] No ports matched 'w7_sha256[*]'. [C:/Users/Dat Pham/Downloads/Source/timing_constraints.sdc:50]
+WARNING: [Vivado 12-646] clock 'clk' not found. [C:/Users/Dat Pham/Downloads/Source/timing_constraints.sdc:50]
+CRITICAL WARNING: [Vivado 12-4739] set_input_delay:No valid object(s) found for '-objects [get_ports {w7_sha256[*]}]'. [C:/Users/Dat Pham/Downloads/Source/timing_constraints.sdc:50]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-584] No ports matched 'w8_sha256[*]'. [C:/Users/Dat Pham/Downloads/Source/timing_constraints.sdc:51]
+WARNING: [Vivado 12-646] clock 'clk' not found. [C:/Users/Dat Pham/Downloads/Source/timing_constraints.sdc:51]
+CRITICAL WARNING: [Vivado 12-4739] set_input_delay:No valid object(s) found for '-objects [get_ports {w8_sha256[*]}]'. [C:/Users/Dat Pham/Downloads/Source/timing_constraints.sdc:51]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-584] No ports matched 'w8_sha256[*]'. [C:/Users/Dat Pham/Downloads/Source/timing_constraints.sdc:52]
+WARNING: [Vivado 12-646] clock 'clk' not found. [C:/Users/Dat Pham/Downloads/Source/timing_constraints.sdc:52]
+CRITICAL WARNING: [Vivado 12-4739] set_input_delay:No valid object(s) found for '-objects [get_ports {w8_sha256[*]}]'. [C:/Users/Dat Pham/Downloads/Source/timing_constraints.sdc:52]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-584] No ports matched 'w9_sha256[*]'. [C:/Users/Dat Pham/Downloads/Source/timing_constraints.sdc:53]
+WARNING: [Vivado 12-646] clock 'clk' not found. [C:/Users/Dat Pham/Downloads/Source/timing_constraints.sdc:53]
+CRITICAL WARNING: [Vivado 12-4739] set_input_delay:No valid object(s) found for '-objects [get_ports {w9_sha256[*]}]'. [C:/Users/Dat Pham/Downloads/Source/timing_constraints.sdc:53]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-584] No ports matched 'w9_sha256[*]'. [C:/Users/Dat Pham/Downloads/Source/timing_constraints.sdc:54]
+WARNING: [Vivado 12-646] clock 'clk' not found. [C:/Users/Dat Pham/Downloads/Source/timing_constraints.sdc:54]
+CRITICAL WARNING: [Vivado 12-4739] set_input_delay:No valid object(s) found for '-objects [get_ports {w9_sha256[*]}]'. [C:/Users/Dat Pham/Downloads/Source/timing_constraints.sdc:54]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-584] No ports matched 'w10_sha256[*]'. [C:/Users/Dat Pham/Downloads/Source/timing_constraints.sdc:55]
+WARNING: [Vivado 12-646] clock 'clk' not found. [C:/Users/Dat Pham/Downloads/Source/timing_constraints.sdc:55]
+CRITICAL WARNING: [Vivado 12-4739] set_input_delay:No valid object(s) found for '-objects [get_ports {w10_sha256[*]}]'. [C:/Users/Dat Pham/Downloads/Source/timing_constraints.sdc:55]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-584] No ports matched 'w10_sha256[*]'. [C:/Users/Dat Pham/Downloads/Source/timing_constraints.sdc:56]
+WARNING: [Vivado 12-646] clock 'clk' not found. [C:/Users/Dat Pham/Downloads/Source/timing_constraints.sdc:56]
+CRITICAL WARNING: [Vivado 12-4739] set_input_delay:No valid object(s) found for '-objects [get_ports {w10_sha256[*]}]'. [C:/Users/Dat Pham/Downloads/Source/timing_constraints.sdc:56]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-584] No ports matched 'w11_sha256[*]'. [C:/Users/Dat Pham/Downloads/Source/timing_constraints.sdc:57]
+WARNING: [Vivado 12-646] clock 'clk' not found. [C:/Users/Dat Pham/Downloads/Source/timing_constraints.sdc:57]
+CRITICAL WARNING: [Vivado 12-4739] set_input_delay:No valid object(s) found for '-objects [get_ports {w11_sha256[*]}]'. [C:/Users/Dat Pham/Downloads/Source/timing_constraints.sdc:57]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-584] No ports matched 'w11_sha256[*]'. [C:/Users/Dat Pham/Downloads/Source/timing_constraints.sdc:58]
+WARNING: [Vivado 12-646] clock 'clk' not found. [C:/Users/Dat Pham/Downloads/Source/timing_constraints.sdc:58]
+CRITICAL WARNING: [Vivado 12-4739] set_input_delay:No valid object(s) found for '-objects [get_ports {w11_sha256[*]}]'. [C:/Users/Dat Pham/Downloads/Source/timing_constraints.sdc:58]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-584] No ports matched 'w12_sha256[*]'. [C:/Users/Dat Pham/Downloads/Source/timing_constraints.sdc:59]
+WARNING: [Vivado 12-646] clock 'clk' not found. [C:/Users/Dat Pham/Downloads/Source/timing_constraints.sdc:59]
+CRITICAL WARNING: [Vivado 12-4739] set_input_delay:No valid object(s) found for '-objects [get_ports {w12_sha256[*]}]'. [C:/Users/Dat Pham/Downloads/Source/timing_constraints.sdc:59]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-584] No ports matched 'w12_sha256[*]'. [C:/Users/Dat Pham/Downloads/Source/timing_constraints.sdc:60]
+WARNING: [Vivado 12-646] clock 'clk' not found. [C:/Users/Dat Pham/Downloads/Source/timing_constraints.sdc:60]
+CRITICAL WARNING: [Vivado 12-4739] set_input_delay:No valid object(s) found for '-objects [get_ports {w12_sha256[*]}]'. [C:/Users/Dat Pham/Downloads/Source/timing_constraints.sdc:60]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-584] No ports matched 'w13_sha256[*]'. [C:/Users/Dat Pham/Downloads/Source/timing_constraints.sdc:61]
+WARNING: [Vivado 12-646] clock 'clk' not found. [C:/Users/Dat Pham/Downloads/Source/timing_constraints.sdc:61]
+CRITICAL WARNING: [Vivado 12-4739] set_input_delay:No valid object(s) found for '-objects [get_ports {w13_sha256[*]}]'. [C:/Users/Dat Pham/Downloads/Source/timing_constraints.sdc:61]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-584] No ports matched 'w13_sha256[*]'. [C:/Users/Dat Pham/Downloads/Source/timing_constraints.sdc:62]
+WARNING: [Vivado 12-646] clock 'clk' not found. [C:/Users/Dat Pham/Downloads/Source/timing_constraints.sdc:62]
+CRITICAL WARNING: [Vivado 12-4739] set_input_delay:No valid object(s) found for '-objects [get_ports {w13_sha256[*]}]'. [C:/Users/Dat Pham/Downloads/Source/timing_constraints.sdc:62]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-584] No ports matched 'w14_sha256[*]'. [C:/Users/Dat Pham/Downloads/Source/timing_constraints.sdc:63]
+WARNING: [Vivado 12-646] clock 'clk' not found. [C:/Users/Dat Pham/Downloads/Source/timing_constraints.sdc:63]
+CRITICAL WARNING: [Vivado 12-4739] set_input_delay:No valid object(s) found for '-objects [get_ports {w14_sha256[*]}]'. [C:/Users/Dat Pham/Downloads/Source/timing_constraints.sdc:63]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-584] No ports matched 'w14_sha256[*]'. [C:/Users/Dat Pham/Downloads/Source/timing_constraints.sdc:64]
+WARNING: [Vivado 12-646] clock 'clk' not found. [C:/Users/Dat Pham/Downloads/Source/timing_constraints.sdc:64]
+CRITICAL WARNING: [Vivado 12-4739] set_input_delay:No valid object(s) found for '-objects [get_ports {w14_sha256[*]}]'. [C:/Users/Dat Pham/Downloads/Source/timing_constraints.sdc:64]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-584] No ports matched 'w15_sha256[*]'. [C:/Users/Dat Pham/Downloads/Source/timing_constraints.sdc:65]
+WARNING: [Vivado 12-646] clock 'clk' not found. [C:/Users/Dat Pham/Downloads/Source/timing_constraints.sdc:65]
+CRITICAL WARNING: [Vivado 12-4739] set_input_delay:No valid object(s) found for '-objects [get_ports {w15_sha256[*]}]'. [C:/Users/Dat Pham/Downloads/Source/timing_constraints.sdc:65]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-584] No ports matched 'w15_sha256[*]'. [C:/Users/Dat Pham/Downloads/Source/timing_constraints.sdc:66]
+WARNING: [Vivado 12-646] clock 'clk' not found. [C:/Users/Dat Pham/Downloads/Source/timing_constraints.sdc:66]
+CRITICAL WARNING: [Vivado 12-4739] set_input_delay:No valid object(s) found for '-objects [get_ports {w15_sha256[*]}]'. [C:/Users/Dat Pham/Downloads/Source/timing_constraints.sdc:66]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-584] No ports matched 'DMAD_addr_in[*]'. [C:/Users/Dat Pham/Downloads/Source/timing_constraints.sdc:69]
+WARNING: [Vivado 12-646] clock 'clk' not found. [C:/Users/Dat Pham/Downloads/Source/timing_constraints.sdc:69]
+CRITICAL WARNING: [Vivado 12-4739] set_input_delay:No valid object(s) found for '-objects [get_ports {DMAD_addr_in[*]}]'. [C:/Users/Dat Pham/Downloads/Source/timing_constraints.sdc:69]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-584] No ports matched 'DMAD_addr_in[*]'. [C:/Users/Dat Pham/Downloads/Source/timing_constraints.sdc:70]
+WARNING: [Vivado 12-646] clock 'clk' not found. [C:/Users/Dat Pham/Downloads/Source/timing_constraints.sdc:70]
+CRITICAL WARNING: [Vivado 12-4739] set_input_delay:No valid object(s) found for '-objects [get_ports {DMAD_addr_in[*]}]'. [C:/Users/Dat Pham/Downloads/Source/timing_constraints.sdc:70]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-584] No ports matched 'DMAD_data_in[*]'. [C:/Users/Dat Pham/Downloads/Source/timing_constraints.sdc:71]
+WARNING: [Vivado 12-646] clock 'clk' not found. [C:/Users/Dat Pham/Downloads/Source/timing_constraints.sdc:71]
+CRITICAL WARNING: [Vivado 12-4739] set_input_delay:No valid object(s) found for '-objects [get_ports {DMAD_data_in[*]}]'. [C:/Users/Dat Pham/Downloads/Source/timing_constraints.sdc:71]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-584] No ports matched 'DMAD_data_in[*]'. [C:/Users/Dat Pham/Downloads/Source/timing_constraints.sdc:72]
+WARNING: [Vivado 12-646] clock 'clk' not found. [C:/Users/Dat Pham/Downloads/Source/timing_constraints.sdc:72]
+CRITICAL WARNING: [Vivado 12-4739] set_input_delay:No valid object(s) found for '-objects [get_ports {DMAD_data_in[*]}]'. [C:/Users/Dat Pham/Downloads/Source/timing_constraints.sdc:72]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-584] No ports matched 'DMAD_wea_in[*]'. [C:/Users/Dat Pham/Downloads/Source/timing_constraints.sdc:73]
+WARNING: [Vivado 12-646] clock 'clk' not found. [C:/Users/Dat Pham/Downloads/Source/timing_constraints.sdc:73]
+CRITICAL WARNING: [Vivado 12-4739] set_input_delay:No valid object(s) found for '-objects [get_ports {DMAD_wea_in[*]}]'. [C:/Users/Dat Pham/Downloads/Source/timing_constraints.sdc:73]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-584] No ports matched 'DMAD_wea_in[*]'. [C:/Users/Dat Pham/Downloads/Source/timing_constraints.sdc:74]
+WARNING: [Vivado 12-646] clock 'clk' not found. [C:/Users/Dat Pham/Downloads/Source/timing_constraints.sdc:74]
+CRITICAL WARNING: [Vivado 12-4739] set_input_delay:No valid object(s) found for '-objects [get_ports {DMAD_wea_in[*]}]'. [C:/Users/Dat Pham/Downloads/Source/timing_constraints.sdc:74]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-584] No ports matched 'DMAI_addr_in[*]'. [C:/Users/Dat Pham/Downloads/Source/timing_constraints.sdc:75]
+WARNING: [Vivado 12-646] clock 'clk' not found. [C:/Users/Dat Pham/Downloads/Source/timing_constraints.sdc:75]
+CRITICAL WARNING: [Vivado 12-4739] set_input_delay:No valid object(s) found for '-objects [get_ports {DMAI_addr_in[*]}]'. [C:/Users/Dat Pham/Downloads/Source/timing_constraints.sdc:75]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-584] No ports matched 'DMAI_addr_in[*]'. [C:/Users/Dat Pham/Downloads/Source/timing_constraints.sdc:76]
+WARNING: [Vivado 12-646] clock 'clk' not found. [C:/Users/Dat Pham/Downloads/Source/timing_constraints.sdc:76]
+CRITICAL WARNING: [Vivado 12-4739] set_input_delay:No valid object(s) found for '-objects [get_ports {DMAI_addr_in[*]}]'. [C:/Users/Dat Pham/Downloads/Source/timing_constraints.sdc:76]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-584] No ports matched 'DMAI_data_in[*]'. [C:/Users/Dat Pham/Downloads/Source/timing_constraints.sdc:77]
+WARNING: [Vivado 12-646] clock 'clk' not found. [C:/Users/Dat Pham/Downloads/Source/timing_constraints.sdc:77]
+CRITICAL WARNING: [Vivado 12-4739] set_input_delay:No valid object(s) found for '-objects [get_ports {DMAI_data_in[*]}]'. [C:/Users/Dat Pham/Downloads/Source/timing_constraints.sdc:77]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-584] No ports matched 'DMAI_data_in[*]'. [C:/Users/Dat Pham/Downloads/Source/timing_constraints.sdc:78]
+WARNING: [Vivado 12-646] clock 'clk' not found. [C:/Users/Dat Pham/Downloads/Source/timing_constraints.sdc:78]
+CRITICAL WARNING: [Vivado 12-4739] set_input_delay:No valid object(s) found for '-objects [get_ports {DMAI_data_in[*]}]'. [C:/Users/Dat Pham/Downloads/Source/timing_constraints.sdc:78]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-584] No ports matched 'DMAI_wea_in[*]'. [C:/Users/Dat Pham/Downloads/Source/timing_constraints.sdc:79]
+WARNING: [Vivado 12-646] clock 'clk' not found. [C:/Users/Dat Pham/Downloads/Source/timing_constraints.sdc:79]
+CRITICAL WARNING: [Vivado 12-4739] set_input_delay:No valid object(s) found for '-objects [get_ports {DMAI_wea_in[*]}]'. [C:/Users/Dat Pham/Downloads/Source/timing_constraints.sdc:79]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-584] No ports matched 'DMAI_wea_in[*]'. [C:/Users/Dat Pham/Downloads/Source/timing_constraints.sdc:80]
+WARNING: [Vivado 12-646] clock 'clk' not found. [C:/Users/Dat Pham/Downloads/Source/timing_constraints.sdc:80]
+CRITICAL WARNING: [Vivado 12-4739] set_input_delay:No valid object(s) found for '-objects [get_ports {DMAI_wea_in[*]}]'. [C:/Users/Dat Pham/Downloads/Source/timing_constraints.sdc:80]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-584] No ports matched 'sha256_result[*]'. [C:/Users/Dat Pham/Downloads/Source/timing_constraints.sdc:83]
+WARNING: [Vivado 12-646] clock 'clk' not found. [C:/Users/Dat Pham/Downloads/Source/timing_constraints.sdc:83]
+CRITICAL WARNING: [Vivado 12-4739] set_output_delay:No valid object(s) found for '-objects [get_ports {sha256_result[*]}]'. [C:/Users/Dat Pham/Downloads/Source/timing_constraints.sdc:83]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-584] No ports matched 'sha256_result[*]'. [C:/Users/Dat Pham/Downloads/Source/timing_constraints.sdc:84]
+WARNING: [Vivado 12-646] clock 'clk' not found. [C:/Users/Dat Pham/Downloads/Source/timing_constraints.sdc:84]
+CRITICAL WARNING: [Vivado 12-4739] set_output_delay:No valid object(s) found for '-objects [get_ports {sha256_result[*]}]'. [C:/Users/Dat Pham/Downloads/Source/timing_constraints.sdc:84]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-584] No ports matched 'sha256_valid'. [C:/Users/Dat Pham/Downloads/Source/timing_constraints.sdc:85]
+WARNING: [Vivado 12-646] clock 'clk' not found. [C:/Users/Dat Pham/Downloads/Source/timing_constraints.sdc:85]
+CRITICAL WARNING: [Vivado 12-4739] set_output_delay:No valid object(s) found for '-objects [get_ports sha256_valid]'. [C:/Users/Dat Pham/Downloads/Source/timing_constraints.sdc:85]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-584] No ports matched 'sha256_valid'. [C:/Users/Dat Pham/Downloads/Source/timing_constraints.sdc:86]
+WARNING: [Vivado 12-646] clock 'clk' not found. [C:/Users/Dat Pham/Downloads/Source/timing_constraints.sdc:86]
+CRITICAL WARNING: [Vivado 12-4739] set_output_delay:No valid object(s) found for '-objects [get_ports sha256_valid]'. [C:/Users/Dat Pham/Downloads/Source/timing_constraints.sdc:86]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-584] No ports matched 'reset'. [C:/Users/Dat Pham/Downloads/Source/timing_constraints.sdc:89]
+CRITICAL WARNING: [Vivado 12-4739] set_false_path:No valid object(s) found for '-from [get_ports reset]'. [C:/Users/Dat Pham/Downloads/Source/timing_constraints.sdc:89]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+CRITICAL WARNING: [Designutils 20-1307] Command 'set_max_fanout' is not supported in the xdc constraint file. [C:/Users/Dat Pham/Downloads/Source/timing_constraints.sdc:92]
+CRITICAL WARNING: [Designutils 20-1307] Command 'set_max_transition' is not supported in the xdc constraint file. [C:/Users/Dat Pham/Downloads/Source/timing_constraints.sdc:93]
+CRITICAL WARNING: [Designutils 20-1307] Command 'set_max_capacitance' is not supported in the xdc constraint file. [C:/Users/Dat Pham/Downloads/Source/timing_constraints.sdc:94]
+WARNING: [Designutils 20-1567] Use of 'set_multicycle_path' with '-hold' is not supported by synthesis. The constraint will not be passed to synthesis. [C:/Users/Dat Pham/Downloads/Source/timing_constraints.sdc:98]
+WARNING: [Vivado 12-584] No ports matched 'A_i[*]'. [C:/Users/Dat Pham/Downloads/Source/timing_constraints.sdc:101]
+WARNING: [Vivado 12-584] No ports matched 'B_i[*]'. [C:/Users/Dat Pham/Downloads/Source/timing_constraints.sdc:101]
+WARNING: [Vivado 12-584] No ports matched 'C_i[*]'. [C:/Users/Dat Pham/Downloads/Source/timing_constraints.sdc:101]
+WARNING: [Vivado 12-584] No ports matched 'D_i[*]'. [C:/Users/Dat Pham/Downloads/Source/timing_constraints.sdc:101]
+WARNING: [Vivado 12-584] No ports matched 'E_i[*]'. [C:/Users/Dat Pham/Downloads/Source/timing_constraints.sdc:101]
+WARNING: [Vivado 12-584] No ports matched 'F_i[*]'. [C:/Users/Dat Pham/Downloads/Source/timing_constraints.sdc:101]
+WARNING: [Vivado 12-584] No ports matched 'G_i[*]'. [C:/Users/Dat Pham/Downloads/Source/timing_constraints.sdc:101]
+WARNING: [Vivado 12-584] No ports matched 'H_i[*]'. [C:/Users/Dat Pham/Downloads/Source/timing_constraints.sdc:101]
+WARNING: [Vivado 12-584] No ports matched 'sha256_result[*]'. [C:/Users/Dat Pham/Downloads/Source/timing_constraints.sdc:101]
+WARNING: [Vivado 12-584] No ports matched 'sha256_valid'. [C:/Users/Dat Pham/Downloads/Source/timing_constraints.sdc:101]
+WARNING: [Vivado 12-584] No ports matched 'w*_sha256[*]'. [C:/Users/Dat Pham/Downloads/Source/timing_constraints.sdc:102]
+WARNING: [Vivado 12-584] No ports matched 'sha256_result[*]'. [C:/Users/Dat Pham/Downloads/Source/timing_constraints.sdc:102]
+WARNING: [Vivado 12-584] No ports matched 'sha256_valid'. [C:/Users/Dat Pham/Downloads/Source/timing_constraints.sdc:102]
+WARNING: [Vivado 12-584] No ports matched 'reset'. [C:/Users/Dat Pham/Downloads/Source/timing_constraints.sdc:105]
+Finished Parsing XDC File [C:/Users/Dat Pham/Downloads/Source/timing_constraints.sdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/Dat Pham/Downloads/Source/timing_constraints.sdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/RISC_Sha_tb_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/RISC_Sha_tb_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [C:/Users/Dat Pham/Downloads/Source/timing_constraints.xdc]
+WARNING: [Vivado 12-584] No ports matched 'clk'. [C:/Users/Dat Pham/Downloads/Source/timing_constraints.xdc:5]
+WARNING: [Vivado 12-2489] -waveform contains time 1.428500 which will be rounded to 1.429 to ensure it is an integer multiple of 1 picosecond [C:/Users/Dat Pham/Downloads/Source/timing_constraints.xdc:5]
+CRITICAL WARNING: [Vivado 12-4739] create_clock:No valid object(s) found for '-objects [get_ports clk]'. [C:/Users/Dat Pham/Downloads/Source/timing_constraints.xdc:5]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-584] No ports matched 'reset'. [C:/Users/Dat Pham/Downloads/Source/timing_constraints.xdc:11]
+WARNING: [Vivado 12-584] No ports matched 'start_in'. [C:/Users/Dat Pham/Downloads/Source/timing_constraints.xdc:11]
+WARNING: [Vivado 12-646] clock 'clk' not found. [C:/Users/Dat Pham/Downloads/Source/timing_constraints.xdc:11]
+CRITICAL WARNING: [Vivado 12-4739] set_input_delay:No valid object(s) found for '-objects [get_ports {reset start_in}]'. [C:/Users/Dat Pham/Downloads/Source/timing_constraints.xdc:11]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-584] No ports matched 'reset'. [C:/Users/Dat Pham/Downloads/Source/timing_constraints.xdc:12]
+WARNING: [Vivado 12-584] No ports matched 'start_in'. [C:/Users/Dat Pham/Downloads/Source/timing_constraints.xdc:12]
+WARNING: [Vivado 12-646] clock 'clk' not found. [C:/Users/Dat Pham/Downloads/Source/timing_constraints.xdc:12]
+CRITICAL WARNING: [Vivado 12-4739] set_input_delay:No valid object(s) found for '-objects [get_ports {reset start_in}]'. [C:/Users/Dat Pham/Downloads/Source/timing_constraints.xdc:12]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-584] No ports matched 'A_i[*]'. [C:/Users/Dat Pham/Downloads/Source/timing_constraints.xdc:15]
+WARNING: [Vivado 12-584] No ports matched 'B_i[*]'. [C:/Users/Dat Pham/Downloads/Source/timing_constraints.xdc:15]
+WARNING: [Vivado 12-584] No ports matched 'C_i[*]'. [C:/Users/Dat Pham/Downloads/Source/timing_constraints.xdc:15]
+WARNING: [Vivado 12-584] No ports matched 'D_i[*]'. [C:/Users/Dat Pham/Downloads/Source/timing_constraints.xdc:15]
+WARNING: [Vivado 12-584] No ports matched 'E_i[*]'. [C:/Users/Dat Pham/Downloads/Source/timing_constraints.xdc:15]
+WARNING: [Vivado 12-584] No ports matched 'F_i[*]'. [C:/Users/Dat Pham/Downloads/Source/timing_constraints.xdc:15]
+WARNING: [Vivado 12-584] No ports matched 'G_i[*]'. [C:/Users/Dat Pham/Downloads/Source/timing_constraints.xdc:15]
+WARNING: [Vivado 12-584] No ports matched 'H_i[*]'. [C:/Users/Dat Pham/Downloads/Source/timing_constraints.xdc:15]
+WARNING: [Vivado 12-646] clock 'clk' not found. [C:/Users/Dat Pham/Downloads/Source/timing_constraints.xdc:15]
+CRITICAL WARNING: [Vivado 12-4739] set_input_delay:No valid object(s) found for '-objects [get_ports {{A_i[*]} {B_i[*]} {C_i[*]} {D_i[*]} {E_i[*]} {F_i[*]} {G_i[*]} {H_i[*]}}]'. [C:/Users/Dat Pham/Downloads/Source/timing_constraints.xdc:15]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-584] No ports matched 'A_i[*]'. [C:/Users/Dat Pham/Downloads/Source/timing_constraints.xdc:16]
+WARNING: [Vivado 12-584] No ports matched 'B_i[*]'. [C:/Users/Dat Pham/Downloads/Source/timing_constraints.xdc:16]
+WARNING: [Vivado 12-584] No ports matched 'C_i[*]'. [C:/Users/Dat Pham/Downloads/Source/timing_constraints.xdc:16]
+INFO: [Common 17-14] Message 'Vivado 12-584' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings. [C:/Users/Dat Pham/Downloads/Source/timing_constraints.xdc:16]
+WARNING: [Vivado 12-646] clock 'clk' not found. [C:/Users/Dat Pham/Downloads/Source/timing_constraints.xdc:16]
+CRITICAL WARNING: [Vivado 12-4739] set_input_delay:No valid object(s) found for '-objects [get_ports {{A_i[*]} {B_i[*]} {C_i[*]} {D_i[*]} {E_i[*]} {F_i[*]} {G_i[*]} {H_i[*]}}]'. [C:/Users/Dat Pham/Downloads/Source/timing_constraints.xdc:16]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-646] clock 'clk' not found. [C:/Users/Dat Pham/Downloads/Source/timing_constraints.xdc:19]
+CRITICAL WARNING: [Vivado 12-4739] set_input_delay:No valid object(s) found for '-objects [get_ports {w*_sha256[*]}]'. [C:/Users/Dat Pham/Downloads/Source/timing_constraints.xdc:19]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-646] clock 'clk' not found. [C:/Users/Dat Pham/Downloads/Source/timing_constraints.xdc:20]
+CRITICAL WARNING: [Vivado 12-4739] set_input_delay:No valid object(s) found for '-objects [get_ports {w*_sha256[*]}]'. [C:/Users/Dat Pham/Downloads/Source/timing_constraints.xdc:20]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-646] clock 'clk' not found. [C:/Users/Dat Pham/Downloads/Source/timing_constraints.xdc:23]
+CRITICAL WARNING: [Vivado 12-4739] set_input_delay:No valid object(s) found for '-objects [get_ports {{DMAD_addr_in[*]} {DMAD_data_in[*]} {DMAD_wea_in[*]}}]'. [C:/Users/Dat Pham/Downloads/Source/timing_constraints.xdc:23]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-646] clock 'clk' not found. [C:/Users/Dat Pham/Downloads/Source/timing_constraints.xdc:24]
+CRITICAL WARNING: [Vivado 12-4739] set_input_delay:No valid object(s) found for '-objects [get_ports {{DMAD_addr_in[*]} {DMAD_data_in[*]} {DMAD_wea_in[*]}}]'. [C:/Users/Dat Pham/Downloads/Source/timing_constraints.xdc:24]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-646] clock 'clk' not found. [C:/Users/Dat Pham/Downloads/Source/timing_constraints.xdc:25]
+CRITICAL WARNING: [Vivado 12-4739] set_input_delay:No valid object(s) found for '-objects [get_ports {{DMAI_addr_in[*]} {DMAI_data_in[*]} {DMAI_wea_in[*]}}]'. [C:/Users/Dat Pham/Downloads/Source/timing_constraints.xdc:25]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-646] clock 'clk' not found. [C:/Users/Dat Pham/Downloads/Source/timing_constraints.xdc:26]
+CRITICAL WARNING: [Vivado 12-4739] set_input_delay:No valid object(s) found for '-objects [get_ports {{DMAI_addr_in[*]} {DMAI_data_in[*]} {DMAI_wea_in[*]}}]'. [C:/Users/Dat Pham/Downloads/Source/timing_constraints.xdc:26]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-646] clock 'clk' not found. [C:/Users/Dat Pham/Downloads/Source/timing_constraints.xdc:29]
+CRITICAL WARNING: [Vivado 12-4739] set_output_delay:No valid object(s) found for '-objects [get_ports {sha256_result[*]}]'. [C:/Users/Dat Pham/Downloads/Source/timing_constraints.xdc:29]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-646] clock 'clk' not found. [C:/Users/Dat Pham/Downloads/Source/timing_constraints.xdc:30]
+CRITICAL WARNING: [Vivado 12-4739] set_output_delay:No valid object(s) found for '-objects [get_ports {sha256_result[*]}]'. [C:/Users/Dat Pham/Downloads/Source/timing_constraints.xdc:30]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-646] clock 'clk' not found. [C:/Users/Dat Pham/Downloads/Source/timing_constraints.xdc:31]
+CRITICAL WARNING: [Vivado 12-4739] set_output_delay:No valid object(s) found for '-objects [get_ports sha256_valid]'. [C:/Users/Dat Pham/Downloads/Source/timing_constraints.xdc:31]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-646] clock 'clk' not found. [C:/Users/Dat Pham/Downloads/Source/timing_constraints.xdc:32]
+CRITICAL WARNING: [Vivado 12-4739] set_output_delay:No valid object(s) found for '-objects [get_ports sha256_valid]'. [C:/Users/Dat Pham/Downloads/Source/timing_constraints.xdc:32]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+CRITICAL WARNING: [Vivado 12-4739] set_false_path:No valid object(s) found for '-from [get_ports reset]'. [C:/Users/Dat Pham/Downloads/Source/timing_constraints.xdc:35]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+CRITICAL WARNING: [Designutils 20-1307] Command 'set_max_fanout' is not supported in the xdc constraint file. [C:/Users/Dat Pham/Downloads/Source/timing_constraints.xdc:38]
+CRITICAL WARNING: [Designutils 20-1307] Command 'set_max_transition' is not supported in the xdc constraint file. [C:/Users/Dat Pham/Downloads/Source/timing_constraints.xdc:41]
+WARNING: [Vivado 12-508] No pins matched '*reg*/D'. [C:/Users/Dat Pham/Downloads/Source/timing_constraints.xdc:44]
+CRITICAL WARNING: [Vivado 12-4739] set_multicycle_path:No valid object(s) found for '-to [get_pins *reg*/D]'. [C:/Users/Dat Pham/Downloads/Source/timing_constraints.xdc:44]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Designutils 20-1567] Use of 'set_multicycle_path' with '-hold' is not supported by synthesis. The constraint will not be passed to synthesis. [C:/Users/Dat Pham/Downloads/Source/timing_constraints.xdc:45]
+Finished Parsing XDC File [C:/Users/Dat Pham/Downloads/Source/timing_constraints.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/Dat Pham/Downloads/Source/timing_constraints.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/RISC_Sha_tb_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/RISC_Sha_tb_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1844.918 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.066 . Memory (MB): peak = 1844.918 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 1844.918 ; gain = 346.348
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xczu9eg-ffvc900-3-e
+INFO: [Synth 8-6742] Reading net delay rules and data
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 1844.918 ; gain = 346.348
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 1844.918 ; gain = 346.348
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'current_state_r_reg' in module 'fsm_controller'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    IDLE |                           000001 |                              000
+                  STATE1 |                           000010 |                              001
+                  STATE2 |                           000100 |                              010
+                  STATE3 |                           001000 |                              011
+                  STATE4 |                           010000 |                              100
+                    DONE |                           100000 |                              101
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'current_state_r_reg' using encoding 'one-hot' in module 'fsm_controller'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 1844.918 ; gain = 346.348
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   4 Input   64 Bit       Adders := 1     
+	   3 Input   64 Bit       Adders := 3     
+	   2 Input   64 Bit       Adders := 9     
+	   4 Input   32 Bit       Adders := 1     
+	   3 Input   32 Bit       Adders := 3     
+	   2 Input   32 Bit       Adders := 9     
+	   2 Input    9 Bit       Adders := 1     
+	   2 Input    7 Bit       Adders := 1     
+	   2 Input    6 Bit       Adders := 1     
++---XORs : 
+	   3 Input     64 Bit         XORs := 5     
+	   2 Input     64 Bit         XORs := 1     
+	   3 Input     32 Bit         XORs := 5     
+	   2 Input     32 Bit         XORs := 1     
++---Registers : 
+	              512 Bit    Registers := 1     
+	              256 Bit    Registers := 1     
+	               64 Bit    Registers := 52    
+	               32 Bit    Registers := 59    
+	                9 Bit    Registers := 1     
+	                7 Bit    Registers := 2     
+	                6 Bit    Registers := 1     
+	                1 Bit    Registers := 5     
++---Muxes : 
+	   4 Input  512 Bit        Muxes := 1     
+	   3 Input   64 Bit        Muxes := 1     
+	   2 Input   64 Bit        Muxes := 9     
+	   3 Input   32 Bit        Muxes := 1     
+	   2 Input   32 Bit        Muxes := 10    
+	   2 Input    9 Bit        Muxes := 1     
+	   6 Input    6 Bit        Muxes := 1     
+	   2 Input    6 Bit        Muxes := 7     
+	   2 Input    1 Bit        Muxes := 3     
+	   6 Input    1 Bit        Muxes := 5     
+	   3 Input    1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 2520 (col length:168)
+BRAMs: 1824 (col length: RAMB18 168 RAMB36 84)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:26 ; elapsed = 00:00:28 . Memory (MB): peak = 1844.918 ; gain = 346.348
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+ROM: Preliminary Mapping	Report
++-----------------+------------+---------------+----------------+
+|Module Name      | RTL Object | Depth x Width | Implemented As | 
++-----------------+------------+---------------+----------------+
+|K_register       | p_0_out    | 64x32         | LUT            | 
+|K_register_64bit | p_0_out    | 128x64        | LUT            | 
+|K_register_64bit | p_0_out    | 128x64        | LUT            | 
++-----------------+------------+---------------+----------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-3321] set_multicycle_path : Empty through list for constraint at line 97 of {C:/Users/Dat Pham/Downloads/Source/timing_constraints.sdc}. [{C:/Users/Dat Pham/Downloads/Source/timing_constraints.sdc}:97]
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:40 ; elapsed = 00:00:46 . Memory (MB): peak = 2384.148 ; gain = 885.578
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:40 ; elapsed = 00:00:46 . Memory (MB): peak = 2384.148 ; gain = 885.578
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5816] Retiming module `RISC_Sha_tb`
+	Numbers of forward move = 0, and backward move = 0
+
+
+INFO: [Synth 8-5816] Retiming module `RISC_Sha_tb' done
+
+
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:40 ; elapsed = 00:00:46 . Memory (MB): peak = 2402.715 ; gain = 904.145
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:43 ; elapsed = 00:00:49 . Memory (MB): peak = 2407.531 ; gain = 908.961
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:43 ; elapsed = 00:00:49 . Memory (MB): peak = 2407.531 ; gain = 908.961
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:43 ; elapsed = 00:00:49 . Memory (MB): peak = 2407.531 ; gain = 908.961
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:43 ; elapsed = 00:00:49 . Memory (MB): peak = 2407.531 ; gain = 908.961
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:43 ; elapsed = 00:00:49 . Memory (MB): peak = 2407.531 ; gain = 908.961
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:43 ; elapsed = 00:00:49 . Memory (MB): peak = 2407.531 ; gain = 908.961
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++-+-----+------+
+| |Cell |Count |
++-+-----+------+
++-+-----+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:43 ; elapsed = 00:00:49 . Memory (MB): peak = 2407.531 ; gain = 908.961
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 1 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:28 ; elapsed = 00:00:45 . Memory (MB): peak = 2407.531 ; gain = 786.867
+Synthesis Optimization Complete : Time (s): cpu = 00:00:44 ; elapsed = 00:00:49 . Memory (MB): peak = 2407.531 ; gain = 908.961
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2407.531 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2447.969 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+216 Infos, 344 Warnings, 90 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:53 ; elapsed = 00:01:01 . Memory (MB): peak = 2447.969 ; gain = 1366.430
+INFO: [Common 17-1381] The checkpoint 'C:/Users/Dat Pham/Downloads/Source/project_1/project_1.runs/synth_1/RISC_Sha_tb.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file RISC_Sha_tb_utilization_synth.rpt -pb RISC_Sha_tb_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Fri Sep 19 11:49:47 2025...

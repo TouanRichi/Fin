@@ -1,0 +1,210 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Dat Pham/Downloads/Source/Adder1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Adder1
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Dat Pham/Downloads/Source/Adder1_64.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Adder1_64bit
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Dat Pham/Downloads/Source/Adder2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Adder2
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Dat Pham/Downloads/Source/Adder2_64.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Adder2_64bit
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Dat Pham/Downloads/Source/Adder3.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Adder3
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Dat Pham/Downloads/Source/Adder3_64.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Adder3_64bit
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Dat Pham/Downloads/Source/Adder4.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Adder4
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Dat Pham/Downloads/Source/Adder4_64.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Adder4_64bit
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Dat Pham/Downloads/Source/Adder_64.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Adder_64bit
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Dat Pham/Downloads/Source/Adder_Sha.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Adder_Sha
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Dat Pham/Downloads/Source/CH_64.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Choice_64bit
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Dat Pham/Downloads/Source/Ch.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Choice
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Dat Pham/Downloads/Source/Delta0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module delta0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Dat Pham/Downloads/Source/Delta0_64.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module delta0_64bit
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Dat Pham/Downloads/Source/Delta1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module delta1
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Dat Pham/Downloads/Source/Delta1_64.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module delta1_64bit
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Dat Pham/Downloads/Source/FSM_Sha.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fsm_controller
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Dat Pham/Downloads/Source/Maj.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Majority
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Dat Pham/Downloads/Source/Maj_64.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Majority_64bit
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Dat Pham/Downloads/Source/Mux32.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mux32_2to1
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Dat Pham/Downloads/Source/Mux32_64.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mux32_2to1_64bit
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Dat Pham/Downloads/Source/Mux_res_sha.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mux_3to1_512bit
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Dat Pham/Downloads/Source/Parise_mux.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pairwise_mux
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Dat Pham/Downloads/Source/Parise_mux64.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pairwise_mux_64bit
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Dat Pham/Downloads/Source/Reg0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module register0_32bit
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Dat Pham/Downloads/Source/Reg0_64.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module register0_64bit
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Dat Pham/Downloads/Source/Reg10.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module register10_32bit
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Dat Pham/Downloads/Source/Reg10_64.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module register10_64bit
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Dat Pham/Downloads/Source/Reg11.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module register11_32bit
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Dat Pham/Downloads/Source/Reg11_64.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module register11_64bit
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Dat Pham/Downloads/Source/Reg12.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module register12_32bit
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Dat Pham/Downloads/Source/Reg12_64.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module register12_64bit
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Dat Pham/Downloads/Source/Reg13.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module register13_32bit
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Dat Pham/Downloads/Source/Reg13_64.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module register13_64bit
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Dat Pham/Downloads/Source/Reg14.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module register14_32bit
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Dat Pham/Downloads/Source/Reg14_64.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module register14_64bit
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Dat Pham/Downloads/Source/Reg15.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module register15_32bit
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Dat Pham/Downloads/Source/Reg15_64.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module register15_64bit
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Dat Pham/Downloads/Source/Reg1_64.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module register1_64bit
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Dat Pham/Downloads/Source/Reg1_Sha.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module register1_32bit
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Dat Pham/Downloads/Source/Reg2_64.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module register2_64bit
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Dat Pham/Downloads/Source/Reg2_Sha.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module register2_32bit
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Dat Pham/Downloads/Source/Reg32.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module register_32bit
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Dat Pham/Downloads/Source/Reg32_64.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module register_64bit
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Dat Pham/Downloads/Source/Reg3_64.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module register3_64bit
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Dat Pham/Downloads/Source/Reg3_Sha.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module register3_32bit
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Dat Pham/Downloads/Source/Reg4_64.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module register4_64bit
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Dat Pham/Downloads/Source/Reg4_Sha.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module register4_32bit
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Dat Pham/Downloads/Source/Reg5.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module register5_32bit
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Dat Pham/Downloads/Source/Reg5_64.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module register5_64bit
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Dat Pham/Downloads/Source/Reg6.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module register6_32bit
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Dat Pham/Downloads/Source/Reg6_64.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module register6_64bit
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Dat Pham/Downloads/Source/Reg7.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module register7_32bit
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Dat Pham/Downloads/Source/Reg7_64.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module register7_64bit
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Dat Pham/Downloads/Source/Reg8.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module register8_32bit
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Dat Pham/Downloads/Source/Reg8_64.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module register8_64bit
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Dat Pham/Downloads/Source/Reg9.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module register9_32bit
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Dat Pham/Downloads/Source/Reg9_64.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module register9_64bit
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Dat Pham/Downloads/Source/RegI.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module registerI_32bit
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Dat Pham/Downloads/Source/Reg_A.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module registerA_32bit
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Dat Pham/Downloads/Source/Reg_A_64.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module registerA_64bit
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Dat Pham/Downloads/Source/Reg_B.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module registerB_32bit
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Dat Pham/Downloads/Source/Reg_B_64.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module registerB_64bit
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Dat Pham/Downloads/Source/Reg_C.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module registerC_32bit
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Dat Pham/Downloads/Source/Reg_C_64.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module registerC_64bit
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Dat Pham/Downloads/Source/Reg_D.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module registerD_32bit
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Dat Pham/Downloads/Source/Reg_D_64.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module registerD_64bit
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Dat Pham/Downloads/Source/Reg_E.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module registerE_32bit
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Dat Pham/Downloads/Source/Reg_E_64.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module registerE_64bit
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Dat Pham/Downloads/Source/Reg_F.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module registerF_32bit
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Dat Pham/Downloads/Source/Reg_F_64.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module registerF_64bit
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Dat Pham/Downloads/Source/Reg_G.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module registerG_32bit
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Dat Pham/Downloads/Source/Reg_G_64.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module registerG_64bit
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Dat Pham/Downloads/Source/Reg_H.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module registerH_32bit
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Dat Pham/Downloads/Source/Reg_H_64.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module registerH_64bit
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Dat Pham/Downloads/Source/Reg_J.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module registerJ_32bit
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Dat Pham/Downloads/Source/Reg_K.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module K_register
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Dat Pham/Downloads/Source/Reg_K_64.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module K_register_64bit
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Dat Pham/Downloads/Source/Reg_res256.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Reg_res_sha
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Dat Pham/Downloads/Source/Sigma0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Sigma0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Dat Pham/Downloads/Source/Sigma0_64.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Sigma0_64bit
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Dat Pham/Downloads/Source/Sigma1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Sigma1
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Dat Pham/Downloads/Source/Sigma1_64.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Sigma1_64bit
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Dat Pham/Downloads/Source/Top_Sha.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RISC_SHA
+INFO: [VRFC 10-2458] undeclared symbol reg_H_o_w, assumed default net type wire [C:/Users/Dat Pham/Downloads/Source/Top_Sha.v:217]
+INFO: [VRFC 10-2458] undeclared symbol data_o_reg32_w, assumed default net type wire [C:/Users/Dat Pham/Downloads/Source/Top_Sha.v:391]
+INFO: [VRFC 10-2458] undeclared symbol data_o_adder4_w, assumed default net type wire [C:/Users/Dat Pham/Downloads/Source/Top_Sha.v:394]
+INFO: [VRFC 10-2458] undeclared symbol reg_A_o_w, assumed default net type wire [C:/Users/Dat Pham/Downloads/Source/Top_Sha.v:396]
+INFO: [VRFC 10-2458] undeclared symbol reg_B_o_w, assumed default net type wire [C:/Users/Dat Pham/Downloads/Source/Top_Sha.v:398]
+INFO: [VRFC 10-2458] undeclared symbol reg_C_o_w, assumed default net type wire [C:/Users/Dat Pham/Downloads/Source/Top_Sha.v:400]
+INFO: [VRFC 10-2458] undeclared symbol data_o_adder3_w, assumed default net type wire [C:/Users/Dat Pham/Downloads/Source/Top_Sha.v:402]
+INFO: [VRFC 10-2458] undeclared symbol reg_E_o_w, assumed default net type wire [C:/Users/Dat Pham/Downloads/Source/Top_Sha.v:404]
+INFO: [VRFC 10-2458] undeclared symbol reg_F_o_w, assumed default net type wire [C:/Users/Dat Pham/Downloads/Source/Top_Sha.v:406]
+INFO: [VRFC 10-2458] undeclared symbol reg_G_o_w, assumed default net type wire [C:/Users/Dat Pham/Downloads/Source/Top_Sha.v:408]
+WARNING: [VRFC 10-2938] 'reg_A_o_w' is already implicitly declared on line 396 [C:/Users/Dat Pham/Downloads/Source/Top_Sha.v:420]
+WARNING: [VRFC 10-2938] 'reg_B_o_w' is already implicitly declared on line 398 [C:/Users/Dat Pham/Downloads/Source/Top_Sha.v:429]
+WARNING: [VRFC 10-2938] 'reg_C_o_w' is already implicitly declared on line 400 [C:/Users/Dat Pham/Downloads/Source/Top_Sha.v:438]
+WARNING: [VRFC 10-2938] 'reg_E_o_w' is already implicitly declared on line 404 [C:/Users/Dat Pham/Downloads/Source/Top_Sha.v:456]
+WARNING: [VRFC 10-2938] 'reg_F_o_w' is already implicitly declared on line 406 [C:/Users/Dat Pham/Downloads/Source/Top_Sha.v:465]
+WARNING: [VRFC 10-2938] 'reg_G_o_w' is already implicitly declared on line 408 [C:/Users/Dat Pham/Downloads/Source/Top_Sha.v:474]
+WARNING: [VRFC 10-2938] 'reg_H_o_w' is already implicitly declared on line 217 [C:/Users/Dat Pham/Downloads/Source/Top_Sha.v:483]
+WARNING: [VRFC 10-2938] 'data_o_adder3_w' is already implicitly declared on line 402 [C:/Users/Dat Pham/Downloads/Source/Top_Sha.v:515]
+WARNING: [VRFC 10-2938] 'data_o_adder4_w' is already implicitly declared on line 394 [C:/Users/Dat Pham/Downloads/Source/Top_Sha.v:539]
+WARNING: [VRFC 10-2938] 'data_o_reg32_w' is already implicitly declared on line 391 [C:/Users/Dat Pham/Downloads/Source/Top_Sha.v:585]
+INFO: [VRFC 10-2458] undeclared symbol reg_H_o_w2, assumed default net type wire [C:/Users/Dat Pham/Downloads/Source/Top_Sha.v:613]
+INFO: [VRFC 10-2458] undeclared symbol reg_A_o_w2, assumed default net type wire [C:/Users/Dat Pham/Downloads/Source/Top_Sha.v:759]
+INFO: [VRFC 10-2458] undeclared symbol reg_E_o_w2, assumed default net type wire [C:/Users/Dat Pham/Downloads/Source/Top_Sha.v:764]
+INFO: [VRFC 10-2458] undeclared symbol data_o_reg32_w2, assumed default net type wire [C:/Users/Dat Pham/Downloads/Source/Top_Sha.v:801]
+INFO: [VRFC 10-2458] undeclared symbol data_o_adder4_w2, assumed default net type wire [C:/Users/Dat Pham/Downloads/Source/Top_Sha.v:804]
+INFO: [VRFC 10-2458] undeclared symbol reg_B_o_w2, assumed default net type wire [C:/Users/Dat Pham/Downloads/Source/Top_Sha.v:808]
+INFO: [VRFC 10-2458] undeclared symbol reg_C_o_w2, assumed default net type wire [C:/Users/Dat Pham/Downloads/Source/Top_Sha.v:810]
+INFO: [VRFC 10-2458] undeclared symbol data_o_adder3_w2, assumed default net type wire [C:/Users/Dat Pham/Downloads/Source/Top_Sha.v:812]
+INFO: [VRFC 10-2458] undeclared symbol reg_F_o_w2, assumed default net type wire [C:/Users/Dat Pham/Downloads/Source/Top_Sha.v:816]
+INFO: [VRFC 10-2458] undeclared symbol reg_G_o_w2, assumed default net type wire [C:/Users/Dat Pham/Downloads/Source/Top_Sha.v:818]
+WARNING: [VRFC 10-2938] 'reg_A_o_w2' is already implicitly declared on line 759 [C:/Users/Dat Pham/Downloads/Source/Top_Sha.v:829]
+WARNING: [VRFC 10-2938] 'reg_B_o_w2' is already implicitly declared on line 808 [C:/Users/Dat Pham/Downloads/Source/Top_Sha.v:838]
+WARNING: [VRFC 10-2938] 'reg_C_o_w2' is already implicitly declared on line 810 [C:/Users/Dat Pham/Downloads/Source/Top_Sha.v:847]
+WARNING: [VRFC 10-2938] 'reg_E_o_w2' is already implicitly declared on line 764 [C:/Users/Dat Pham/Downloads/Source/Top_Sha.v:865]
+WARNING: [VRFC 10-2938] 'reg_F_o_w2' is already implicitly declared on line 816 [C:/Users/Dat Pham/Downloads/Source/Top_Sha.v:874]
+WARNING: [VRFC 10-2938] 'reg_G_o_w2' is already implicitly declared on line 818 [C:/Users/Dat Pham/Downloads/Source/Top_Sha.v:883]
+WARNING: [VRFC 10-2938] 'reg_H_o_w2' is already implicitly declared on line 613 [C:/Users/Dat Pham/Downloads/Source/Top_Sha.v:892]
+WARNING: [VRFC 10-2938] 'data_o_adder3_w2' is already implicitly declared on line 812 [C:/Users/Dat Pham/Downloads/Source/Top_Sha.v:919]
+WARNING: [VRFC 10-2938] 'data_o_adder4_w2' is already implicitly declared on line 804 [C:/Users/Dat Pham/Downloads/Source/Top_Sha.v:938]
+WARNING: [VRFC 10-2938] 'data_o_reg32_w2' is already implicitly declared on line 801 [C:/Users/Dat Pham/Downloads/Source/Top_Sha.v:949]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Dat Pham/Downloads/Source/tb_FSM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RISC_Sha_tb

@@ -1,0 +1,141 @@
+Vivado Simulator 2020.1
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2020.1/bin/unwrapped/win64.o/xelab.exe -wto 48aeb6b970c847a2a8d1ee0fbb018099 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot RISC_Sha_tb_behav xil_defaultlib.RISC_Sha_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "C:/Users/Dat Pham/Downloads/Source/FSM_Sha.v" Line 1. Module fsm_controller doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/Dat Pham/Downloads/Source/Mux32.v" Line 1. Module mux32_2to1 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/Dat Pham/Downloads/Source/Delta0.v" Line 1. Module delta0 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/Dat Pham/Downloads/Source/Delta1.v" Line 1. Module delta1 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/Dat Pham/Downloads/Source/Adder_Sha.v" Line 1. Module Adder_Sha doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/Dat Pham/Downloads/Source/Adder1.v" Line 1. Module Adder1 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/Dat Pham/Downloads/Source/Ch.v" Line 1. Module Choice doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/Dat Pham/Downloads/Source/Adder2.v" Line 1. Module Adder2 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/Dat Pham/Downloads/Source/Adder3.v" Line 1. Module Adder3 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/Dat Pham/Downloads/Source/Maj.v" Line 1. Module Majority doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/Dat Pham/Downloads/Source/Adder4.v" Line 1. Module Adder4 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/Dat Pham/Downloads/Source/Mux32_64.v" Line 1. Module mux32_2to1_64bit doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/Dat Pham/Downloads/Source/Delta0_64.v" Line 1. Module delta0_64bit doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/Dat Pham/Downloads/Source/Delta1_64.v" Line 1. Module delta1_64bit doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/Dat Pham/Downloads/Source/Adder_64.v" Line 1. Module Adder_64bit doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/Dat Pham/Downloads/Source/Adder1_64.v" Line 1. Module Adder1_64bit doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/Dat Pham/Downloads/Source/CH_64.v" Line 1. Module Choice_64bit doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/Dat Pham/Downloads/Source/Adder2_64.v" Line 1. Module Adder2_64bit doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/Dat Pham/Downloads/Source/Adder3_64.v" Line 1. Module Adder3_64bit doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/Dat Pham/Downloads/Source/Maj_64.v" Line 1. Module Majority_64bit doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/Dat Pham/Downloads/Source/Adder4_64.v" Line 1. Module Adder4_64bit doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/Dat Pham/Downloads/Source/Mux_res_sha.v" Line 1. Module mux_3to1_512bit doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/Dat Pham/Downloads/Source/FSM_Sha.v" Line 1. Module fsm_controller doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/Dat Pham/Downloads/Source/Mux32.v" Line 1. Module mux32_2to1 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/Dat Pham/Downloads/Source/Delta0.v" Line 1. Module delta0 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/Dat Pham/Downloads/Source/Delta1.v" Line 1. Module delta1 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/Dat Pham/Downloads/Source/Adder_Sha.v" Line 1. Module Adder_Sha doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/Dat Pham/Downloads/Source/Adder1.v" Line 1. Module Adder1 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/Dat Pham/Downloads/Source/Ch.v" Line 1. Module Choice doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/Dat Pham/Downloads/Source/Adder2.v" Line 1. Module Adder2 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/Dat Pham/Downloads/Source/Adder3.v" Line 1. Module Adder3 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/Dat Pham/Downloads/Source/Maj.v" Line 1. Module Majority doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/Dat Pham/Downloads/Source/Adder4.v" Line 1. Module Adder4 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/Dat Pham/Downloads/Source/Mux32_64.v" Line 1. Module mux32_2to1_64bit doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/Dat Pham/Downloads/Source/Delta0_64.v" Line 1. Module delta0_64bit doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/Dat Pham/Downloads/Source/Delta1_64.v" Line 1. Module delta1_64bit doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/Dat Pham/Downloads/Source/Adder_64.v" Line 1. Module Adder_64bit doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/Dat Pham/Downloads/Source/Adder1_64.v" Line 1. Module Adder1_64bit doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/Dat Pham/Downloads/Source/CH_64.v" Line 1. Module Choice_64bit doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/Dat Pham/Downloads/Source/Adder2_64.v" Line 1. Module Adder2_64bit doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/Dat Pham/Downloads/Source/Adder3_64.v" Line 1. Module Adder3_64bit doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/Dat Pham/Downloads/Source/Maj_64.v" Line 1. Module Majority_64bit doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/Dat Pham/Downloads/Source/Adder4_64.v" Line 1. Module Adder4_64bit doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/Dat Pham/Downloads/Source/Mux_res_sha.v" Line 1. Module mux_3to1_512bit doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.fsm_controller
+Compiling module xil_defaultlib.mux32_2to1
+Compiling module xil_defaultlib.register0_32bit
+Compiling module xil_defaultlib.register1_32bit
+Compiling module xil_defaultlib.register2_32bit
+Compiling module xil_defaultlib.register3_32bit
+Compiling module xil_defaultlib.register4_32bit
+Compiling module xil_defaultlib.register5_32bit
+Compiling module xil_defaultlib.register6_32bit
+Compiling module xil_defaultlib.register7_32bit
+Compiling module xil_defaultlib.register8_32bit
+Compiling module xil_defaultlib.register9_32bit
+Compiling module xil_defaultlib.register10_32bit
+Compiling module xil_defaultlib.register11_32bit
+Compiling module xil_defaultlib.register12_32bit
+Compiling module xil_defaultlib.register13_32bit
+Compiling module xil_defaultlib.register14_32bit
+Compiling module xil_defaultlib.register15_32bit
+Compiling module xil_defaultlib.delta0
+Compiling module xil_defaultlib.delta1
+Compiling module xil_defaultlib.Adder_Sha
+Compiling module xil_defaultlib.K_register
+Compiling module xil_defaultlib.Adder1
+Compiling module xil_defaultlib.pairwise_mux
+Compiling module xil_defaultlib.registerA_32bit
+Compiling module xil_defaultlib.registerB_32bit
+Compiling module xil_defaultlib.registerC_32bit
+Compiling module xil_defaultlib.registerD_32bit
+Compiling module xil_defaultlib.registerE_32bit
+Compiling module xil_defaultlib.registerF_32bit
+Compiling module xil_defaultlib.registerG_32bit
+Compiling module xil_defaultlib.registerH_32bit
+Compiling module xil_defaultlib.Choice
+Compiling module xil_defaultlib.Sigma1
+Compiling module xil_defaultlib.Adder2
+Compiling module xil_defaultlib.Adder3
+Compiling module xil_defaultlib.Majority
+Compiling module xil_defaultlib.Sigma0
+Compiling module xil_defaultlib.Adder4
+Compiling module xil_defaultlib.registerI_32bit
+Compiling module xil_defaultlib.registerJ_32bit
+Compiling module xil_defaultlib.register_32bit
+Compiling module xil_defaultlib.mux32_2to1_64bit
+Compiling module xil_defaultlib.register0_64bit
+Compiling module xil_defaultlib.register1_64bit
+Compiling module xil_defaultlib.register2_64bit
+Compiling module xil_defaultlib.register3_64bit
+Compiling module xil_defaultlib.register4_64bit
+Compiling module xil_defaultlib.register5_64bit
+Compiling module xil_defaultlib.register6_64bit
+Compiling module xil_defaultlib.register7_64bit
+Compiling module xil_defaultlib.register8_64bit
+Compiling module xil_defaultlib.register9_64bit
+Compiling module xil_defaultlib.register10_64bit
+Compiling module xil_defaultlib.register11_64bit
+Compiling module xil_defaultlib.register12_64bit
+Compiling module xil_defaultlib.register13_64bit
+Compiling module xil_defaultlib.register14_64bit
+Compiling module xil_defaultlib.register15_64bit
+Compiling module xil_defaultlib.delta0_64bit
+Compiling module xil_defaultlib.delta1_64bit
+Compiling module xil_defaultlib.Sigma0_64bit
+Compiling module xil_defaultlib.Sigma1_64bit
+Compiling module xil_defaultlib.Adder_64bit
+Compiling module xil_defaultlib.K_register_64bit
+Compiling module xil_defaultlib.Adder1_64bit
+Compiling module xil_defaultlib.pairwise_mux_64bit
+Compiling module xil_defaultlib.registerA_64bit
+Compiling module xil_defaultlib.registerB_64bit
+Compiling module xil_defaultlib.registerC_64bit
+Compiling module xil_defaultlib.registerD_64bit
+Compiling module xil_defaultlib.registerE_64bit
+Compiling module xil_defaultlib.registerF_64bit
+Compiling module xil_defaultlib.registerG_64bit
+Compiling module xil_defaultlib.registerH_64bit
+Compiling module xil_defaultlib.Choice_64bit
+Compiling module xil_defaultlib.Adder2_64bit
+Compiling module xil_defaultlib.Adder3_64bit
+Compiling module xil_defaultlib.Majority_64bit
+Compiling module xil_defaultlib.Adder4_64bit
+Compiling module xil_defaultlib.register_64bit
+Compiling module xil_defaultlib.Reg_res_sha
+Compiling module xil_defaultlib.mux_3to1_512bit
+Compiling module xil_defaultlib.RISC_SHA
+Compiling module xil_defaultlib.RISC_Sha_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot RISC_Sha_tb_behav
