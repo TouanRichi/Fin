@@ -601,8 +601,8 @@ module fsm_controller(
                 ena_K_reg = 1'b0;   // Không kích hoạt thanh ghi K
                 sel_parise_mux = 1'b0; // Không chọn MUX_REG_ABCDEDGH
                 sel_parise_mux2 = 1'b0; // Không chọn MUX_REG_ABCDEDGH
-                sel_res256 = 1'b0; // Không chọn MUX_REG_ABCDEDGH
-                sel_res512 = 1'b0; // Không chọn MUX_REG_ABCDEDGH
+                sel_res256 = 1'b1; // KEEP RESULT VALID - Chốt kết quả sha256
+                sel_res512 = 1'b1; // KEEP RESULT VALID - Chốt kết quả sha512
                 done_Sha   = 1'b1;  // Chot dap an
             end
             default: begin
