@@ -382,7 +382,7 @@ module fsm_controller(
     assign cnt_w = cnt_r;
     // Bộ đếm tăng lên mỗi chu kỳ đồng hồ
     always @(posedge clk or posedge rst) begin
-        if (!rst) begin
+        if (~rst) begin
             cnt_r <= 9'd0;       // Reset bộ đếm về 0
         end else begin
             if (ena_cnt_w) begin
@@ -410,8 +410,8 @@ module fsm_controller(
     assign next_state_w = next_state_r;
 
     // State transition logic (synchronous logic)
-    always @(posedge clk or negedge rst) begin
-        if (!rst) begin
+    always @(posedge clk or posedge rst) begin
+        if (~rst) begin
             current_state_r <= IDLE;  // Reset về trạng thái chờ
             start_sha_o <= 1'b0;      // Không kích hoạt thanh ghi SHA
         end else begin
@@ -482,7 +482,7 @@ module fsm_controller(
 
 // Thêm tín hiệu cho phép đọc lần lượt Reg16
     always @(posedge clk or posedge rst) begin
-        if (!rst) begin
+        if (~rst) begin
             reg16_out <= 32'b0; // Reset đầu ra về 0
         end else begin
             case (current_state_w) 
