@@ -65,19 +65,7 @@ set_input_delay -clock clk -min 0.2 [get_ports {w14_sha256[*]}]
 set_input_delay -clock clk -max 1.4 [get_ports {w15_sha256[*]}]
 set_input_delay -clock clk -min 0.2 [get_ports {w15_sha256[*]}]
 
-# Memory interface constraints (for RISC-V implementation)
-set_input_delay -clock clk -max 1.4 [get_ports {DMAD_addr_in[*]}]
-set_input_delay -clock clk -min 0.2 [get_ports {DMAD_addr_in[*]}]
-set_input_delay -clock clk -max 1.4 [get_ports {DMAD_data_in[*]}]
-set_input_delay -clock clk -min 0.2 [get_ports {DMAD_data_in[*]}]
-set_input_delay -clock clk -max 1.4 [get_ports {DMAD_wea_in[*]}]
-set_input_delay -clock clk -min 0.2 [get_ports {DMAD_wea_in[*]}]
-set_input_delay -clock clk -max 1.4 [get_ports {DMAI_addr_in[*]}]
-set_input_delay -clock clk -min 0.2 [get_ports {DMAI_addr_in[*]}]
-set_input_delay -clock clk -max 1.4 [get_ports {DMAI_data_in[*]}]
-set_input_delay -clock clk -min 0.2 [get_ports {DMAI_data_in[*]}]
-set_input_delay -clock clk -max 1.4 [get_ports {DMAI_wea_in[*]}]
-set_input_delay -clock clk -min 0.2 [get_ports {DMAI_wea_in[*]}]
+# No memory interface constraints needed for SHA256_Top module
 
 # Output delay constraints
 set_output_delay -clock clk -max 1.4 [get_ports {sha256_result[*]}]
